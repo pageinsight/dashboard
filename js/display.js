@@ -82,7 +82,7 @@ class DashboardDisplay extends Display {
 					btnLabel: 'OK',
 					onclick: dg => {
 						dg.hide();
-						window.open('signin.html', '_self');
+						window.open("https://pageinsight/signin.html", '_self');
 					}
 				});
 			}
@@ -94,7 +94,7 @@ class DashboardDisplay extends Display {
 				btnLabel: 'OK',
 				onclick: dg => {
 					dg.hide();
-					window.open('signin.html', '_self');
+					window.open("https://pageinsight/signin.html", '_self');
 				}
 			});
 		});
