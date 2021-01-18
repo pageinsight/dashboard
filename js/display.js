@@ -66,7 +66,7 @@ class DashboardDisplay extends Display {
 
 	loadUserData(callback){
 
-		let url = getHostUrl() + "user/getUser?apiKey=" + sessionStorage.getItem("apiKey");
+		let url = getBackendUrl() + "user/getUser?apiKey=" + sessionStorage.getItem("apiKey");
 
 		sendGetRequest(url)
 		.then(json => {
@@ -521,7 +521,7 @@ class AllProjectsLevelTwoDisplay extends LevelTwoDisplay {
 
 	loadProjects(callback){
 
-		let url = getHostUrl() + "project/getUserProjects?apiKey=" + sessionStorage.getItem("apiKey");
+		let url = getBackendUrl() + "project/getUserProjects?apiKey=" + sessionStorage.getItem("apiKey");
 
 		sendGetRequest(url)
 		.then(json => {
@@ -634,7 +634,7 @@ class CreateProjectLevelTwoDisplay extends LevelTwoDisplay {
 	createProject(name){
 
 		let data = { name: name, apiKey: sessionStorage.getItem("apiKey") };
-		let url = getHostUrl() + "project/createProject";
+		let url = getBackendUrl() + "project/createProject";
 
 		DashboardDisplay.ShowProgressContainer();
 
@@ -748,7 +748,7 @@ class SettingsLevelTwoDisplay extends LevelTwoDisplay {
 			this.updateProfile(email, name);
 		}else{
 			let data = { email: email };
-			let url = getHostUrl() + "user/sendEmailVerification";
+			let url = getBackendUrl() + "user/sendEmailVerification";
 
 			LevelTwoDisplay.ShowLevelTwoProgressContainer();
 
@@ -807,7 +807,7 @@ class SettingsLevelTwoDisplay extends LevelTwoDisplay {
 	verifyChangeEmailCode(email, code, name){
 
 		let data = { code: code, email: email };
-		let url = getHostUrl() + "user/verifyEmail";
+		let url = getBackendUrl() + "user/verifyEmail";
 
 		DashboardDisplay.ShowProgressContainer();
 
@@ -842,7 +842,7 @@ class SettingsLevelTwoDisplay extends LevelTwoDisplay {
 
 	updateProfile(email, name){
 		let data = { email: email, name: name, apiKey: sessionStorage.getItem("apiKey") };
-		let url = getHostUrl() + "user/updateProfile";
+		let url = getBackendUrl() + "user/updateProfile";
 
 		DashboardDisplay.ShowProgressContainer();
 
@@ -940,7 +940,7 @@ class SettingsLevelTwoDisplay extends LevelTwoDisplay {
 	updatePassword(email, password){
 		
 		let data = { email: email, password: password };
-		let url = getHostUrl() + "user/changePassword";
+		let url = getBackendUrl() + "user/changePassword";
 
 		DashboardDisplay.ShowProgressContainer();
 
@@ -1019,7 +1019,7 @@ class SettingsLevelTwoDisplay extends LevelTwoDisplay {
 	regenerateAPIKey(){
 
 		let data = { apiKey: sessionStorage.getItem("apiKey") };
-		let url = getHostUrl() + "user/regenerateAPIKey";
+		let url = getBackendUrl() + "user/regenerateAPIKey";
 
 		DashboardDisplay.ShowProgressContainer();
 
@@ -1069,7 +1069,7 @@ class SettingsLevelTwoDisplay extends LevelTwoDisplay {
 		let user = dashboardDisplay.userHandler.data;
 
 		let data = { email: user.email, password: user.password, apiKey: sessionStorage.getItem("apiKey") };
-		let url = getHostUrl() + "user/closeAccount";
+		let url = getBackendUrl() + "user/closeAccount";
 
 		DashboardDisplay.ShowProgressContainer();
 
@@ -1217,7 +1217,7 @@ class CreatePageLevelTwoDisplay extends LevelTwoDisplay {
 	createPage(name){
 
 		let data = { name: name, apiKey: sessionStorage.getItem("apiKey"), projectId: this.project._id };
-		let url = getHostUrl() + "page/createPage";
+		let url = getBackendUrl() + "page/createPage";
 
 		DashboardDisplay.ShowProgressContainer();
 
@@ -1341,7 +1341,7 @@ class CreateEventLevelTwoDisplay extends LevelTwoDisplay {
 	createEvent(name, description){
 
 		let data = { name: name, description: description, apiKey: sessionStorage.getItem("apiKey"), projectId: this.page.projectId, pageId: this.page._id };
-		let url = getHostUrl() + "event/createEvent";
+		let url = getBackendUrl() + "event/createEvent";
 
 		DashboardDisplay.ShowProgressContainer();
 
@@ -1506,7 +1506,7 @@ class AllPagesLevelThreeDisplay extends LevelThreeDisplay {
 
 	loadPages(callback){
 
-		let url = getHostUrl() + "page/getProjectPages?apiKey=" + sessionStorage.getItem("apiKey") + "&projectId=" + this.project._id;
+		let url = getBackendUrl() + "page/getProjectPages?apiKey=" + sessionStorage.getItem("apiKey") + "&projectId=" + this.project._id;
 
 		sendGetRequest(url)
 		.then(json => {
@@ -1659,7 +1659,7 @@ class ProjectSettingsLevelThreeDisplay extends LevelThreeDisplay {
 
 	updateProjectName(name){
 		let data = { projectName: name, apiKey: sessionStorage.getItem("apiKey"), projectId: this.project._id };
-		let url = getHostUrl() + "project/updateProject";
+		let url = getBackendUrl() + "project/updateProject";
 
 		DashboardDisplay.ShowProgressContainer();
 
@@ -1706,7 +1706,7 @@ class ProjectSettingsLevelThreeDisplay extends LevelThreeDisplay {
 
 	deleteProject(){
 		let data = { apiKey: sessionStorage.getItem("apiKey"), projectId: this.project._id };
-		let url = getHostUrl() + "project/deleteProject";
+		let url = getBackendUrl() + "project/deleteProject";
 
 		DashboardDisplay.ShowProgressContainer();
 
@@ -1797,7 +1797,7 @@ class AllEventsLevelThreeDisplay extends LevelThreeDisplay {
 
 	loadEvents(callback){
 
-		let url = getHostUrl() + "event/getPageEvents?apiKey=" + sessionStorage.getItem("apiKey") + "&projectId=" + this.page.projectId + "&pageId=" + this.page._id;
+		let url = getBackendUrl() + "event/getPageEvents?apiKey=" + sessionStorage.getItem("apiKey") + "&projectId=" + this.page.projectId + "&pageId=" + this.page._id;
 
 		sendGetRequest(url)
 		.then(json => {
@@ -1954,7 +1954,7 @@ class PageSettingsLevelThreeDisplay extends LevelThreeDisplay {
 
 	updatePageName(name){
 		let data = { pageName: name, apiKey: sessionStorage.getItem("apiKey"), projectId: this.project._id, pageId: this.page._id };
-		let url = getHostUrl() + "page/updatePage";
+		let url = getBackendUrl() + "page/updatePage";
 
 		DashboardDisplay.ShowProgressContainer();
 
@@ -2002,7 +2002,7 @@ class PageSettingsLevelThreeDisplay extends LevelThreeDisplay {
 	deletePage(){
 
 		let data = { apiKey: sessionStorage.getItem("apiKey"), projectId: this.project._id, pageId: this.page._id  };
-		let url = getHostUrl() + "page/deletePage";
+		let url = getBackendUrl() + "page/deletePage";
 
 		DashboardDisplay.ShowProgressContainer();
 
@@ -2160,7 +2160,7 @@ class EventSettingsLevelThreeDisplay extends LevelThreeDisplay {
 
 	updateEvent(name, description){
 		let data = { eventName: name, eventDescription: description, eventId: this.event._id, apiKey: sessionStorage.getItem("apiKey") };
-		let url = getHostUrl() + "event/updateEvent";
+		let url = getBackendUrl() + "event/updateEvent";
 
 		DashboardDisplay.ShowProgressContainer();
 
@@ -2234,7 +2234,7 @@ class EventSettingsLevelThreeDisplay extends LevelThreeDisplay {
 	deleteEvent(){
 
 		let data = { eventId: this.event._id, apiKey: sessionStorage.getItem("apiKey") };
-		let url = getHostUrl() + "event/deleteEvent";
+		let url = getBackendUrl() + "event/deleteEvent";
 
 		DashboardDisplay.ShowProgressContainer();
 

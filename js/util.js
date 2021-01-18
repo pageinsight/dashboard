@@ -23,6 +23,10 @@ function getHostUrl(){
 	return window.location.protocol + "//" + window.location.host + "/";
 }
 
+function getBackendUrl(){
+	return "https://webmetric.herokuapp.com/";
+}
+
 function stopClickPropagation(e){
 	if(!e) e = window.event;
 	if(e.stopPropagation){
