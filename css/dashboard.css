@@ -1,0 +1,178 @@
+@import 'rex.css';
+
+#custom-grid1{
+	display: grid;
+	grid-template-columns: 30px auto;
+	grid-template-rows: auto;
+}
+
+#modalBackground{
+	display: none;
+}
+
+.custom-modal{
+	display: none;
+	width: 40%;
+}
+
+.custom-modal:nth-child(3){
+	display: none;
+}
+
+.custom-app-name{
+	font-size: 1.3em;
+}
+
+.custom-responsive-container{
+	margin: 0 90px;
+}
+
+.custom-responsive-paragraph{
+	font-size: 1.4em;
+}
+
+.custom-responsive-grid{
+	width: 100%;
+}
+
+.custom-responsive-chart-height{
+	height: 500px;
+}
+
+@media (max-width: 1280px){
+	.custom-modal{
+		width: 50%;
+	}
+	.custom-responsive-container{
+		margin: 0 44px;
+	}
+	.custom-responsive-paragraph{
+		font-size: 1.4em;
+	}
+	.custom-responsive-grid2{
+		width: 80%;
+	}
+	.custom-responsive-chart-height{
+		height: 450px;
+	}
+}
+
+@media (max-width: 1000px){
+	.custom-responsive-container{
+		margin: 0 32px;
+	}
+	.custom-responsive-paragraph{
+		font-size: 1.3em;
+	}
+	.custom-responsive-grid2{
+		width: 80%;
+	}
+	.custom-responsive-chart-height{
+		height: 400px;
+	}
+}
+
+@media (max-width: 800px){
+	.custom-app-name-container{
+		margin-left: 16px;
+	}
+	.custom-user-profile-icon-container{
+		margin-right: 16px;
+	}
+	.custom-user-profile-icon-dropdown{
+		margin-right: 16px;
+	}
+	.custom-responsive-container{
+		margin: 0 24px;
+	}
+	.custom-responsive-paragraph{
+		font-size: 1.2em;
+	}
+	.custom-responsive-grid2{
+		width: 90%;
+	}
+	.custom-responsive-chart-height{
+		height: 300px;
+	}
+}
+
+@media (max-width: 660px){
+	.custom-responsive-grid2, .custom-responsive-grid{
+		display: block;
+		width: 100%;
+	}
+	.custom-responsive-settings-description-container{
+		padding-right: 0px;
+	}
+	.custom-responsive-settings-description-title{
+		font-size: 1.3em;
+	}
+	.custom-responsive-settings-description-paragraph{
+		margin-top: 0;
+		font-size: 1.2em;
+		line-height: 1.5em;
+		width: 100%;
+	}
+	.custom-responsive-event-title{
+		font-size: 1.3em;
+	}
+	.custom-responsive-event-description{
+		font-size: 1.2em;
+		line-height: 1.5em;
+	}
+	.custom-responsive-full-width{
+		width: 100%;
+	}
+	.custom-responsive-settings-content-container{
+		padding: 0;
+		margin-top: 16px;
+	}
+	.custom-responsive-settings-content-error-message{
+		text-align: center;
+	}
+	.custom-responsive-settings-content-btn{
+		width: 100%;
+	}
+	.custom-responsive-settings-content-btn2{
+		margin-top: 32px;
+		width: 100%;
+	}
+	.custom-responsive-chart-height{
+		height: 200px;
+	}
+}
+
+@media (max-width: 514px){
+	.custom-app-name{
+		font-size: 1.1em;
+	}
+	.custom-app-name-container{
+		margin-left: 8px;
+	}
+	.custom-user-profile-icon-container{
+		margin-right: 8px;
+	}
+	.custom-user-profile-icon-dropdown{
+		margin: 0;
+		width: 100%;
+	}
+	.custom-user-profile-icon-dropdown-container{
+		border-left: 8px solid transparent;
+		border-right: 8px solid transparent;
+	}
+	.custom-modal{
+		width: 90%;
+	}
+	.custom-responsive-container{
+		margin: 0 8px;
+	}
+}
+
+@media (max-width: 400px){
+	#filterProjectsInput{
+		width: 100%;
+	}
+	#createProjectBtn{
+		width: 100%;
+	}
+}
