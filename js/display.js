@@ -1081,7 +1081,7 @@ class SettingsLevelTwoDisplay extends LevelTwoDisplay {
 					btnLabel: "OK",
 					onclick: (dg) => {
 						sessionStorage.removeItem("apiKey");
-						window.open("index.html", "_self");
+						window.open("https://pageinsight.app", "_self");
 						dg.hide();
 					}
 				});

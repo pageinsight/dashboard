@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		let hash = window.location.hash;
+		if(hash){
+			sessionStorage.setItem("apiKey", hash.substring(1));
+			window.open("index.html", "_self");
+		}else{
+			window.history.back();
+		}
+	</script>
+</body>
+</html>
