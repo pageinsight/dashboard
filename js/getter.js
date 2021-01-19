@@ -390,3 +390,15 @@ function getAddMetricBtn(){
 	return document.getElementById("addMetricBtn");
 }
 
+function getCancelCreateProjectBtn(){
+	return document.getElementById("cancelCreateProjectBtn");
+}
+
+function getCancelCreatePageBtn(){
+	return document.getElementById("cancelCreatePageBtn");
+}
+
+function getCancelCreateEventBtn(){
+	return document.getElementById("cancelCreateEventBtn");
+}
+

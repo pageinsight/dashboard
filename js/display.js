@@ -625,6 +625,10 @@ class CreateProjectLevelTwoDisplay extends LevelTwoDisplay {
 
 			this.createProject(name);
 		};
+
+		getCancelCreateProjectBtn().onclick = () => {
+			dashboardDisplay.displaySwitcher.open(new AllProjectsLevelOneDisplay());
+		};
 	}
 
 	close(){
@@ -1208,6 +1212,10 @@ class CreatePageLevelTwoDisplay extends LevelTwoDisplay {
 
 			this.createPage(name);
 		};
+
+		getCancelCreatePageBtn().onclick = () => {
+			dashboardDisplay.displaySwitcher.open(new AllPagesLevelOneDisplay(this.project));
+		};
 	}
 
 	close(){
@@ -1330,6 +1338,10 @@ class CreateEventLevelTwoDisplay extends LevelTwoDisplay {
 			}
 
 			this.createEvent(name, description);
+		};
+
+		getCancelCreateEventBtn().onclick = () => {
+			dashboardDisplay.displaySwitcher.open(new AllEventsLevelOneDisplay(this.project, this.page));
 		};
 	}
 
