@@ -85,6 +85,10 @@ body{
 	border: 1px solid rgb(64, 64, 64);
 }
 
+.rex-border-lightgray{
+	border: 1px solid rgb(164, 164, 164);
+}
+
 .rex-border-green{
 	border: 1px solid green;
 }
@@ -656,6 +660,10 @@ body{
 	width: 250px;
 }
 
+.rex-width-260px{
+	width: 260px;
+}
+
 .rex-width-300px{
 	width: 300px;
 }
@@ -774,6 +782,10 @@ body{
 
 .rex-curDiv-16px{
 	border-radius: 16px;
+}
+
+.rex-curDiv-20px{
+	border-radius: 20px;
 }
 
 .rex-curDiv-30px{
@@ -902,6 +914,10 @@ body{
 
 .rex-ml-32px{
 	margin-left: 32px;
+}
+
+.rex-ml-260px{
+	margin-left: 260px;
 }
 
 .rex-mr-8px{
