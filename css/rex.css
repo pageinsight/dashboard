@@ -86,6 +86,20 @@ body{
 	background-color: rgb(240, 240, 240);
 }
 
+.rex-btn-danger{
+	padding: 16px;
+	background-color: transparent;
+	border: 1px solid rgb(180, 180, 180);
+	border-radius: 8px;
+	letter-spacing: 2px;
+	color: rgb(250, 10, 10);
+}
+
+.rex-btn-danger:hover{
+	cursor: pointer;
+	background-color: rgb(240, 240, 240);
+}
+
 .rex-input-primary{
 	padding: 12px 16px;
 	border: 0;
@@ -108,6 +122,10 @@ body{
 
 .rex-border-gray{
 	border: 1px solid rgb(64, 64, 64);
+}
+
+.rex-border-lightgray{
+	border: 1px solid rgb(150, 150, 150);
 }
 
 .rex-border-green{
@@ -276,6 +294,10 @@ body{
 
 .rex-background-1{
 	background-color: rgb(56, 89, 220);
+}
+
+.rex-background-2{
+	background-color: rgb(240, 240, 240);
 }
 
 .rex-background-red{
@@ -868,6 +890,22 @@ body{
 
 .rex-curDiv-64px{
 	border-radius: 64px;
+}
+
+.rex-curDiv-tl-8px{
+	border-top-left-radius: 8px;
+}
+
+.rex-curDiv-tr-8px{
+	border-top-right-radius: 8px;
+}
+
+.rex-curDiv-bl-8px{
+	border-bottom-left-radius: 8px;
+}
+
+.rex-curDiv-br-8px{
+	border-bottom-right-radius: 8px;
 }
 
 .rex-float-left{
@@ -1541,7 +1579,7 @@ body{
 	}
 
 	.rex-fs-normal-50p{
-		font-size: 1.8em;
+		font-size: 1.85em;
 	}
 
 	.rex-fs-normal{
@@ -1549,15 +1587,15 @@ body{
 	}
 
 	.rex-fs-small-50p{
-		font-size: 1.2em;
+		font-size: 1.25em;
 	}
 
 	.rex-fs-small{
-		font-size: 1.1em;
+		font-size: 1.15em;
 	}
 
 	.rex-fs-extra-small-50p{
-		font-size: 1.0em;
+		font-size: 1.05em;
 	}
 
 	.rex-fs-extra-small{

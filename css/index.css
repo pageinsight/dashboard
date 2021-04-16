@@ -8,7 +8,7 @@ body{
 }
 
 .custom-label-1{
-	padding: 4px 8px;
+	padding: 6px 8px;
 	color: rgb(124, 45, 18);
 	background-color: rgb(254, 215, 170);
 	border-radius: 4px;
@@ -42,6 +42,30 @@ body{
 	grid-template-rows: auto;
 }
 
+.custom-login-container-width{
+	width: 500px;
+}
+
+.custom-settings-container{
+	width: 670px;
+	margin: 0 auto;
+}
+
+.custom-usage-grid{
+	display: grid;
+	grid-template-columns: auto 100px;
+	grid-template-rows: auto;
+}
+
+.custom-signup-container-grid{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: auto;
+}
+
+.custom-signup-container-width{
+	width: 900px;
+}
 
 @media (max-width: 1100px) {
 	.custom-responsive-container{
@@ -49,9 +73,28 @@ body{
 	}
 }
 
+@media (max-width: 850px) {
+	.custom-signup-container-grid{
+		display: block;
+	}
+	.custom-signup-container-width{
+		width: 100%;
+		padding: 0 16px;
+	}
+	.custom-signup-container-list{
+		display: block;
+	}
+}
+
 @media (max-width: 800px) {
 	.custom-label-1-container{
 		display: none;
+	}
+}
+
+@media (max-width: 675px) {
+	.custom-settings-container{
+		width: 100%;
 	}
 }
 
@@ -66,11 +109,25 @@ body{
 	.custom-label-2{
 		font-size: 0.9em;
 	}
-}
-
-@media (max-width: 625px) {
 	.custom-icon-size{
 		margin-right: 8px;
 	}
+	.custom-subscription-plan-grid{
+		display: block;
+	}
+	.custom-billing-container{
+		display: inline-block;
+	}
 }
 
+@media (max-width: 500px){
+	.custom-login-container-width{
+		width: 100%;
+	}
+	.custom-usage-grid{
+		grid-template-columns: auto 60px;
+	}
+	.custom-signup-container-form{
+		padding: 0;
+	}
+}
