@@ -8,6 +8,7 @@
 	<link type="image/x-icon" rel="icon" href="https://assets.pageinsight.app/icon.png"/>
 	<title>Page Insight Analytics | Sign up</title>
 	<link type="text/css" rel="stylesheet" href="css/index.css"/>
+	<script type="text/javascript" src="js/upgrade.js"></script>
 	<script async defer data-domain="pageinsighthq.app" src="https://plausible.io/js/plausible.js"></script>
 </head>
 <body>
@@ -31,11 +32,11 @@
 					</p>
 					<div class="rex-space-8px"></div>
 					<div class="rex-mt-16px rex-display-grid2 rex-border-lightgray rex-curDiv-8px rex-fs-small">
-						<div class="rex-center-text rex-pad8px custom-billing-background rex-color-white rex-curDiv-tl-8px rex-curDiv-bl-8px rex-hover">
+						<div id="btn_monthly_billing" class="rex-center-text rex-pad8px custom-billing-background rex-color-white rex-curDiv-tl-8px rex-curDiv-bl-8px rex-hover">
 							Monthly billing
 						</div>
-						<div class="rex-center-text rex-pad8px rex-curDiv-tr-8px rex-curDiv-br-8px rex-selectable-item-background rex-hover">
-							Yearly billing <span class="rex-weight-bold custom-label-3 rex-fs-xx-small rex-curDiv-8px rex-pt-4px rex-pb-4px rex-pl-8px rex-pr-8px">-50%</span>
+						<div id="btn_yearly_billing" class="rex-center-text rex-pad8px rex-curDiv-tr-8px rex-curDiv-br-8px rex-selectable-item-background rex-hover">
+							Yearly billing <span class="rex-weight-bold custom-label-3 rex-fs-xx-small rex-curDiv-8px rex-pt-4px rex-pb-4px rex-pl-8px rex-pr-8px">-33%</span>
 						</div>
 					</div>
 					<div class="rex-space-8px"></div>
@@ -45,46 +46,46 @@
 							<div class="rex-color-gray rex-pt-16px rex-pb-16px rex-pl-24px rex-pr-24px">MONTHLY PAGEVIEWS</div>
 							<div class="rex-color-gray rex-pt-16px rex-pb-16px rex-pl-24px rex-pr-24px">PRICE PER MONTH</div>
 						</div>
-						<div class="rex-display-grid2 rex-border-bottom-lightgray rex-selectable-item-background rex-hover">
-							<div class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">10K</div>
-							<div class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">$3</div>
+						<div id="bc_0" class="rex-display-grid2 rex-border-bottom-lightgray rex-selectable-item-background rex-hover">
+							<div id="mpv_0" class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">10K</div>
+							<div id="ppm_0" class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">$3</div>
 						</div>
-						<div class="rex-display-grid2 rex-border-bottom-lightgray rex-selectable-item-background rex-hover">
-							<div class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">10K</div>
-							<div class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">$3</div>
+						<div id="bc_1" class="rex-display-grid2 rex-border-bottom-lightgray rex-selectable-item-background rex-hover">
+							<div id="mpv_1" class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">10K</div>
+							<div id="ppm_1" class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">$3</div>
 						</div>
-						<div class="rex-display-grid2 rex-border-bottom-lightgray rex-selectable-item-background rex-hover">
-							<div class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">10K</div>
-							<div class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">$3</div>
+						<div id="bc_2" class="rex-display-grid2 rex-border-bottom-lightgray rex-selectable-item-background rex-hover">
+							<div id="mpv_2" class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">10K</div>
+							<div id="ppm_2" class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">$3</div>
 						</div>
-						<div class="rex-display-grid2 rex-border-bottom-lightgray rex-hover custom-billing-selected">
-							<div class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">10K</div>
-							<div class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">$3</div>
+						<div id="bc_3" class="rex-display-grid2 rex-border-bottom-lightgray rex-hover custom-billing-selected">
+							<div id="mpv_3" class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">10K</div>
+							<div id="ppm_3" class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">$3</div>
 						</div>
-						<div class="rex-display-grid2 rex-border-bottom-lightgray rex-selectable-item-background rex-hover">
-							<div class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">10K</div>
-							<div class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">$3</div>
+						<div id="bc_4" class="rex-display-grid2 rex-border-bottom-lightgray rex-selectable-item-background rex-hover">
+							<div id="mpv_4" class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">10K</div>
+							<div id="ppm_4" class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">$3</div>
 						</div>
-						<div class="rex-display-grid2 rex-border-bottom-lightgray rex-selectable-item-background rex-hover">
-							<div class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">10K</div>
-							<div class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">$3</div>
+						<div id="bc_5" class="rex-display-grid2 rex-border-bottom-lightgray rex-selectable-item-background rex-hover">
+							<div id="mpv_5" class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">10K</div>
+							<div id="ppm_5" class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">$3</div>
 						</div>
-						<div class="rex-display-grid2 rex-border-bottom-lightgray rex-selectable-item-background rex-hover">
-							<div class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">10K</div>
-							<div class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">$3</div>
+						<div id="bc_6" class="rex-display-grid2 rex-border-bottom-lightgray rex-selectable-item-background rex-hover">
+							<div id="mpv_6" class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">10K</div>
+							<div id="ppm_6" class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">$3</div>
 						</div>
-						<div class="rex-display-grid2 rex-border-bottom-lightgray rex-selectable-item-background rex-hover">
-							<div class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">10K</div>
-							<div class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">$3</div>
+						<div id="bc_7" class="rex-display-grid2 rex-border-bottom-lightgray rex-selectable-item-background rex-hover">
+							<div id="mpv_7" class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">10K</div>
+							<div id="ppm_7" class="rex-color-gray rex-pt-18px rex-pb-18px rex-pl-24px rex-pr-24px">$3</div>
 						</div>
 						
 					</div>
 					<p class="rex-mt-32px rex-text-align-right rex-fs-normal">
-						Due today: <b>$32</b>
+						Due today: <b id="priceDueText">$32</b>
 					</p>
 					<div class="rex-text-align-right rex-mt-32px">
 						<a href="#">
-							<button class="rex-btn-primary rex-fs-small custom-btn-primary">Pay securely via stripe</button>
+							<button id="btnPaySecurely" class="rex-btn-primary rex-fs-small custom-btn-primary">Pay securely via stripe</button>
 						</a>
 					</div>
 				</div>
