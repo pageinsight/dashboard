@@ -1,0 +1,61 @@
+/*Application defined*/
+.rex-background-primary{
+	background-color: rgb(23, 52, 97);
+}
+
+.rex-background-secondary{
+	background-color: rgb(32, 32, 32);
+}
+
+.rex-background-tertiary{
+	background-color: rgb(56, 89, 220)
+}
+
+/*Default*/
+.rex-background-red{
+	background-color: red;
+}
+
+.rex-background-blue{
+	background-color: blue;
+}
+
+.rex-background-green{
+	background-color: green;
+}
+
+.rex-background-yellow{
+	background-color: yellow;
+}
+
+.rex-background-orange{
+	background-color: orange;
+}
+
+.rex-background-cyan{
+	background-color: cyan;
+}
+
+.rex-background-pink{
+	background-color: pink;
+}
+
+.rex-background-darkgray{
+	background-color: rgb(100, 100, 100);
+}
+
+.rex-background-gray{
+	background-color: rgb(215, 215, 215);
+}
+
+.rex-background-transparent{
+	background-color: transparent;
+}
+
+.rex-background-white{
+	background-color: white;
+}
+
+.rex-background-black{
+	background-color: black;
+}

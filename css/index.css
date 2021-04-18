@@ -1,3 +1,17 @@
+@import 'rex.css';
+@import 'rex-size.css';
+@import 'rex-color.css';
+@import 'rex-background.css';
+@import 'rex-font-size.css';
+@import 'rex-margin.css';
+@import 'rex-padding.css';
+@import 'rex-border.css';
+@import 'rex-display.css';
+@import 'rex-alignment.css';
+@import 'rex-positioning.css';
+@import 'rex-dom.css';
+@import 'rex-clickable-dropdown.css';
+
 body{
 	background-color: rgb(244, 245, 255);
 }
@@ -15,8 +29,13 @@ body{
 }
 
 .custom-label-2{
-	padding: 4px 8px;
+	padding: 6px 8px;
 	border-radius: 4px;
+}
+
+.custom-label-3{
+	color: rgb(124, 45, 18);
+	background-color: rgb(254, 215, 170);
 }
 
 .custom-btn-primary{
@@ -67,6 +86,26 @@ body{
 	width: 900px;
 }
 
+.custom-billing-container{
+	background-color: rgb(245, 245, 245);
+}
+
+.custom-billing-background{
+	background-color: rgb(30, 57, 166);
+}
+
+.custom-billing-background:hover{
+	background-color: rgb(56, 89, 220);
+}
+
+.custom-billing-selected{
+	border-top: 2px solid rgb(50, 255, 150);
+	border-bottom: 2px solid rgb(50, 255, 150);
+	border-left: 1px solid rgb(50, 255, 150);
+	border-right: 1px solid rgb(50, 255, 510);
+	background-color: rgba(50, 255, 50, 0.1);
+}
+
 @media (max-width: 1100px) {
 	.custom-responsive-container{
 		width: 90%;
@@ -102,21 +141,15 @@ body{
 	.custom-icon-size{
 		width: 35px;
 		height: 35px;
-	}
-	.custom-fs-normal-50p{
-		font-size: 1.5em;
+		margin-right: 8px;
 	}
 	.custom-label-2{
 		font-size: 0.9em;
 	}
-	.custom-icon-size{
-		margin-right: 8px;
-	}
 	.custom-subscription-plan-grid{
 		display: block;
-	}
-	.custom-billing-container{
-		display: inline-block;
+		width: 230px;
+		margin: 0 auto;
 	}
 }
 
@@ -125,9 +158,16 @@ body{
 		width: 100%;
 	}
 	.custom-usage-grid{
-		grid-template-columns: auto 60px;
+		grid-template-columns: auto 70px;
 	}
 	.custom-signup-container-form{
 		padding: 0;
 	}
 }
+
+@media (max-width: 384px){
+	.custom-subscription-plan-grid{
+		width: 100%;
+	}
+}
+
