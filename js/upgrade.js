@@ -73,11 +73,11 @@ window.onload = () => {
 
 	function updateBillingUI(){
 		if(billingType == MONTHLY_BILLING_TYPE){
-			btnMonthlyBilling.className = "rex-center-text rex-pad8px custom-billing-background rex-color-white rex-curDiv-tl-8px rex-curDiv-bl-8px rex-hover";
-			btnYearlyBilling.className = "rex-center-text rex-pad8px rex-curDiv-tr-8px rex-curDiv-br-8px rex-selectable-item-background rex-hover";
+			btnMonthlyBilling.className = "rex-center-text rex-pad16px custom-billing-background rex-color-white rex-curDiv-tl-8px rex-curDiv-bl-8px rex-hover";
+			btnYearlyBilling.className = "rex-center-text rex-pad16px rex-curDiv-tr-8px rex-curDiv-br-8px rex-selectable-item-background rex-hover";
 		}else{
-			btnYearlyBilling.className = "rex-center-text rex-pad8px custom-billing-background rex-color-white rex-curDiv-tr-8px rex-curDiv-br-8px rex-hover";
-			btnMonthlyBilling.className = "rex-center-text rex-pad8px rex-curDiv-tr-8px rex-curDiv-br-8px rex-selectable-item-background rex-hover";
+			btnYearlyBilling.className = "rex-center-text rex-pad16px custom-billing-background rex-color-white rex-curDiv-tr-8px rex-curDiv-br-8px rex-hover";
+			btnMonthlyBilling.className = "rex-center-text rex-pad16px rex-curDiv-tr-8px rex-curDiv-br-8px rex-selectable-item-background rex-hover";
 		}
 	}
 
