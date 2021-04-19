@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="icon" href="https://assets.pageinsight.app/icon.png" type="image/png"/>
+	<link rel="shortcut icon" href="https://assets.pageinsight.app/icon.png" type="image/png"/>
+	<link type="image/x-icon" rel="icon" href="https://assets.pageinsight.app/icon.png"/>
+	<title>Page Insight Analytics</title>
+	<link type="text/css" rel="stylesheet" href="css/index.css"/>
+	<link type="text/css" rel="stylesheet" href="css/rex-toggle-switch.css"/>
+	<script type="text/javascript" src="js/util.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script async defer data-domain="pageinsighthq.app" src="https://plausible.io/js/plausible.js"></script>
+</head>
+<body>
+	<div class="rex-space-32px"></div>
+	<div class="custom-responsive-container">
+		<div class="rex-display-grid2">
+			<div>
+				<a href="index.html">
+					<div class="rex-display-table">
+						<img src="https://assets.pageinsight.app/icon-128px.png" class="rex-width-40px rex-height-40px rex-display-table-cell rex-vertical-align rex-mr-16px custom-icon-size"/>
+						<span class="rex-color-blacktint rex-weight-bold rex-display-table-cell rex-vertical-align rex-fs-x-large rex-text-overflow-ellipses">Page Insight</span>
+					</div>
+				</a>
+			</div>
+			<div class="rex-position-relative">
+				<div class="rex-color-blacktint rex-weight-bold rex-fs-normal rex-center-absolute-div-vertical rex-right-0">
+					<table>
+						<tr>
+							<td class="custom-label-1-container">
+								<a href="settings.html" class="custom-label-1 rex-weight-bold rex-mr-32px rex-fs-normal">30 trial days left</a>
+							</td>
+							<td class="rex-hover">
+								<div class="rex-cd-dropdown">
+									<span id="settingsDropdownToggle" class="rex-cd-dropbtn rex-selectable-item-background custom-label-2">
+										<span class="rex-weight-bold rex-fs-normal rex-text-overflow-ellipses">Rex Anthony</span>
+										<img src="images/icons/ic_ellipses.png" class="rex-width-20px rex-height-20px rex-vertical-align"/>
+									</span>
+									<div id="settingsDropdown" class="rex-cd-dropdown-content">
+										<a href="settings.html" class="rex-border-bottom-gray">Settings</a>
+										<a href="#">Log out</a>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="rex-space-32px"></div>
+		<div class="rex-space-32px"></div>
+
+		<a href="#" class="rex-fs-x-small rex-color-primary rex-weight-bold rex-color-link">← Back to stats</a>
+		<h2 class="rex-color-blacktint rex-weight-bold rex-fs-xx-large rex-mt-8px">Settings for pageinsight.app</h2>
+		<div class="rex-space-16px rex-border-bottom-gray"></div>
+		<div class="rex-space-16px"></div>
+		<div class="rex-space-8px"></div>
+		<div class="custom-site-settings-container-grid">
+			<div class="rex-fs-normal">
+				<label for="check">
+					<div class="custom-website-item-settings-grid custom-settings-anchor rex-pad8px rex-selectable-item-background rex-item-selected rex-curDiv-8px rex-mb-16px rex-hover">
+						<div>Goals</div>
+						<div class="rex-display-flex rex-center-flex-items">
+							<img src="images/icons/ic_dropdown_arrow.png" class="rex-width-16px rex-height-16px">
+						</div>
+					</div>
+				</label>
+				<input type="checkbox" id="check" class="rex-display-gone">
+				<div id="menu" class="custom-settings-list"><!-- the list of settings -->
+					<div class="rex-pad8px rex-selectable-item-background rex-curDiv-8px">
+						<a href="settingsGeneral.html" class="rex-color-black rex-display-block">General</a>
+					</div>
+					<div class="rex-pad8px rex-selectable-item-background rex-curDiv-8px rex-mt-8px">
+						<a href="settingsVisibility.html" class="rex-color-black rex-display-block">Visibility</a>
+					</div>
+					<div class="rex-pad8px rex-selectable-item-background rex-curDiv-8px rex-mt-8px">
+						<a href="settingsGoal.html" class="rex-color-black rex-display-block">Goals</a>
+					</div>
+					<div class="rex-pad8px rex-selectable-item-background rex-curDiv-8px rex-mt-8px">
+						<a href="settingsEmailReports.html" class="rex-color-black rex-display-block">Email reports</a>
+					</div>
+					<div class="rex-pad8px rex-selectable-item-background rex-curDiv-8px rex-mt-8px">
+						<a href="settingsDangerZone.html" class="rex-color-black rex-display-block">Danger zone</a>
+					</div>
+				</div> 
+			</div>
+			<div class="custom-site-settings-display">
+				<div class="rex-box-shadow2 rex-background-white rex-curDiv-8px rex-pad32px">
+					<h2 class="rex-fs-large rex-color-blacktint">Goals</h2>
+					<p class="rex-color-gray rex-fs-small rex-mt-8px rex-lh-small">Define actions that you want your users to take like visiting a certain page, submitting a form, etc.</p>
+					<div class="rex-space-16px"></div>
+					<div class="rex-space-8px"></div>
+					<p class="rex-color-black rex-fs-normal">No goals configured for this site yet</p>
+					<div class="rex-space-16px"></div>
+					<a href="#">
+						<button class="rex-btn-primary rex-fs-normal custom-btn-primary">Add goal</button>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="rex-space-32px"></div>
+		<div class="rex-space-32px"></div>
+		<div class="rex-space-32px"></div>
+	</div>
+</body>
+</html>

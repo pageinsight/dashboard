@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="icon" href="https://assets.pageinsight.app/icon.png" type="image/png"/>
+	<link rel="shortcut icon" href="https://assets.pageinsight.app/icon.png" type="image/png"/>
+	<link type="image/x-icon" rel="icon" href="https://assets.pageinsight.app/icon.png"/>
+	<title>Page Insight Analytics</title>
+	<link type="text/css" rel="stylesheet" href="css/index.css"/>
+	<script type="text/javascript" src="js/util.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script async defer data-domain="pageinsighthq.app" src="https://plausible.io/js/plausible.js"></script>
+</head>
+<body>
+	<div class="rex-space-32px"></div>
+	<div class="custom-responsive-container">
+		<div class="rex-display-grid2">
+			<div>
+				<a href="index.html">
+					<div class="rex-display-table">
+						<img src="https://assets.pageinsight.app/icon-128px.png" class="rex-width-40px rex-height-40px rex-display-table-cell rex-vertical-align rex-mr-16px custom-icon-size"/>
+						<span class="rex-color-blacktint rex-weight-bold rex-display-table-cell rex-vertical-align rex-fs-x-large rex-text-overflow-ellipses">Page Insight</span>
+					</div>
+				</a>
+			</div>
+			<div class="rex-position-relative">
+				<div class="rex-color-blacktint rex-weight-bold rex-fs-normal rex-center-absolute-div-vertical rex-right-0">
+					<table>
+						<tr>
+							<td class="custom-label-1-container">
+								<a href="settings.html" class="custom-label-1 rex-weight-bold rex-mr-32px rex-fs-normal">30 trial days left</a>
+							</td>
+							<td class="rex-hover">
+								<div class="rex-cd-dropdown">
+									<span id="settingsDropdownToggle" class="rex-cd-dropbtn rex-selectable-item-background custom-label-2">
+										<span class="rex-weight-bold rex-fs-normal rex-text-overflow-ellipses">Rex Anthony</span>
+										<img src="images/icons/ic_ellipses.png" class="rex-width-20px rex-height-20px rex-vertical-align"/>
+									</span>
+									<div id="settingsDropdown" class="rex-cd-dropdown-content">
+										<a href="settings.html" class="rex-border-bottom-gray">Settings</a>
+										<a href="#">Log out</a>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="rex-space-32px"></div>
+		<div class="rex-space-32px"></div>
+
+		<a href="#" class="rex-fs-x-small rex-color-primary rex-weight-bold rex-color-link">← Back to stats</a>
+		<h2 class="rex-color-blacktint rex-weight-bold rex-fs-xx-large rex-mt-8px">Settings for pageinsight.app</h2>
+		<div class="rex-space-16px rex-border-bottom-gray"></div>
+		<div class="rex-space-16px"></div>
+		<div class="rex-space-8px"></div>
+		<div class="custom-site-settings-container-grid">
+			<div class="rex-fs-normal">
+				<label for="check">
+					<div class="custom-website-item-settings-grid custom-settings-anchor rex-pad8px rex-selectable-item-background rex-item-selected rex-curDiv-8px rex-mb-16px rex-hover">
+						<div>General</div>
+						<div class="rex-display-flex rex-center-flex-items">
+							<img src="images/icons/ic_dropdown_arrow.png" class="rex-width-16px rex-height-16px">
+						</div>
+					</div>
+				</label>
+				<input type="checkbox" id="check" class="rex-display-gone">
+				<div id="menu" class="custom-settings-list"><!-- the list of settings -->
+					<div class="rex-pad8px rex-selectable-item-background rex-curDiv-8px">
+						<a href="settingsGeneral.html" class="rex-color-black rex-display-block">General</a>
+					</div>
+					<div class="rex-pad8px rex-selectable-item-background rex-curDiv-8px rex-mt-8px">
+						<a href="settingsVisibility.html" class="rex-color-black rex-display-block">Visibility</a>
+					</div>
+					<div class="rex-pad8px rex-selectable-item-background rex-curDiv-8px rex-mt-8px">
+						<a href="settingsGoal.html" class="rex-color-black rex-display-block">Goals</a>
+					</div>
+					<div class="rex-pad8px rex-selectable-item-background rex-curDiv-8px rex-mt-8px">
+						<a href="settingsEmailReports.html" class="rex-color-black rex-display-block">Email reports</a>
+					</div>
+					<div class="rex-pad8px rex-selectable-item-background rex-curDiv-8px rex-mt-8px">
+						<a href="settingsDangerZone.html" class="rex-color-black rex-display-block">Danger zone</a>
+					</div>
+				</div> 
+			</div>
+			<div class="custom-site-settings-display">
+				<div class="rex-box-shadow2 rex-background-white rex-curDiv-8px rex-pad32px">
+					<h2 class="rex-fs-large rex-color-blacktint">General information</h2>
+					<p class="rex-color-gray rex-fs-small rex-mt-8px">Update your reporting timezone.</p>
+					<div class="rex-space-8px"></div>
+					<div class="rex-space-16px"></div>
+					<p class="rex-fs-small rex-weight-bold rex-color-blacktint">Domain</p>
+					<input type="text" class="rex-input-primary rex-width-100pp rex-mt-8px rex-fs-small" value="pageinsight.app" disabled>
+					<div class="rex-space-8px"></div>
+					<p class="rex-fs-small rex-mt-16px rex-weight-bold rex-color-blacktint">Reporting timezone</p>
+					<select name="timezone" class="rex-input-primary rex-width-100pp rex-fs-small rex-mt-8px">
+						<option value="Etc/GMT+12">(GMT-12:00) International Date Line West</option>
+						<option value="Pacific/Midway">(GMT-11:00) Midway Island, Samoa</option>
+						<option value="Pacific/Honolulu">(GMT-10:00) Hawaii</option>
+						<option value="US/Alaska">(GMT-09:00) Alaska</option>
+						<option value="America/Los_Angeles">(GMT-08:00) Pacific Time (US & Canada)</option>
+						<option value="America/Tijuana">(GMT-08:00) Tijuana, Baja California</option>
+						<option value="US/Arizona">(GMT-07:00) Arizona</option>
+						<option value="America/Chihuahua">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
+						<option value="US/Mountain">(GMT-07:00) Mountain Time (US & Canada)</option>
+						<option value="America/Managua">(GMT-06:00) Central America</option>
+						<option value="US/Central">(GMT-06:00) Central Time (US & Canada)</option>
+						<option value="America/Mexico_City">(GMT-06:00) Guadalajara, Mexico City, Monterrey</option>
+						<option value="Canada/Saskatchewan">(GMT-06:00) Saskatchewan</option>
+						<option value="America/Bogota">(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
+						<option value="US/Eastern">(GMT-05:00) Eastern Time (US & Canada)</option>
+						<option value="US/East-Indiana">(GMT-05:00) Indiana (East)</option>
+						<option value="Canada/Atlantic">(GMT-04:00) Atlantic Time (Canada)</option>
+						<option value="America/Caracas">(GMT-04:00) Caracas, La Paz</option>
+						<option value="America/Manaus">(GMT-04:00) Manaus</option>
+						<option value="America/Santiago">(GMT-04:00) Santiago</option>
+						<option value="Canada/Newfoundland">(GMT-03:30) Newfoundland</option>
+						<option value="America/Sao_Paulo">(GMT-03:00) Brasilia</option>
+						<option value="America/Argentina/Buenos_Aires">(GMT-03:00) Buenos Aires, Georgetown</option>
+						<option value="America/Godthab">(GMT-03:00) Greenland</option>
+						<option value="America/Montevideo">(GMT-03:00) Montevideo</option>
+						<option value="America/Noronha">(GMT-02:00) Mid-Atlantic</option>
+						<option value="Atlantic/Cape_Verde">(GMT-01:00) Cape Verde Is.</option>
+						<option value="Atlantic/Azores">(GMT-01:00) Azores</option>
+						<option value="Africa/Casablanca">(GMT+00:00) Casablanca, Monrovia, Reykjavik</option>
+						<option value="Etc/Greenwich">(GMT+00:00) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London</option>
+						<option value="Europe/Amsterdam">(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</option>
+						<option value="Europe/Belgrade">(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</option>
+						<option value="Europe/Brussels">(GMT+01:00) Brussels, Copenhagen, Madrid, Paris</option>
+						<option value="Europe/Sarajevo">(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb</option>
+						<option value="Africa/Lagos">(GMT+01:00) West Central Africa</option>
+						<option value="Asia/Amman">(GMT+02:00) Amman</option>
+						<option value="Europe/Athens">(GMT+02:00) Athens, Bucharest, Istanbul</option>
+						<option value="Asia/Beirut">(GMT+02:00) Beirut</option>
+						<option value="Africa/Cairo">(GMT+02:00) Cairo</option>
+						<option value="Africa/Harare">(GMT+02:00) Harare, Pretoria</option>
+						<option value="Europe/Helsinki">(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius</option>
+						<option value="Asia/Jerusalem">(GMT+02:00) Jerusalem</option>
+						<option value="Europe/Minsk">(GMT+02:00) Minsk</option>
+						<option value="Africa/Windhoek">(GMT+02:00) Windhoek</option>
+						<option value="Asia/Kuwait">(GMT+03:00) Kuwait, Riyadh, Baghdad</option>
+						<option value="Europe/Moscow">(GMT+03:00) Moscow, St. Petersburg, Volgograd</option>
+						<option value="Africa/Nairobi">(GMT+03:00) Nairobi</option>
+						<option value="Asia/Tbilisi">(GMT+03:00) Tbilisi</option>
+						<option value="Asia/Tehran">(GMT+03:30) Tehran</option>
+						<option value="Asia/Muscat">(GMT+04:00) Abu Dhabi, Muscat</option>
+						<option value="Asia/Baku">(GMT+04:00) Baku</option>
+						<option value="Asia/Yerevan">(GMT+04:00) Yerevan</option>
+						<option value="Asia/Kabul">(GMT+04:30) Kabul</option>
+						<option value="Asia/Yekaterinburg">(GMT+05:00) Yekaterinburg</option>
+						<option value="Asia/Karachi">(GMT+05:00) Islamabad, Karachi, Tashkent</option>
+						<option value="Asia/Calcutta">(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi</option>
+						<option value="Asia/Calcutta">(GMT+05:30) Sri Jayawardenapura</option>
+						<option value="Asia/Katmandu">(GMT+05:45) Kathmandu</option>
+						<option value="Asia/Almaty">(GMT+06:00) Almaty, Novosibirsk</option>
+						<option value="Asia/Dhaka">(GMT+06:00) Astana, Dhaka</option>
+						<option value="Asia/Rangoon">(GMT+06:30) Yangon (Rangoon)</option>
+						<option value="Asia/Bangkok">(GMT+07:00) Bangkok, Hanoi, Jakarta</option>
+						<option value="Asia/Krasnoyarsk">(GMT+07:00) Krasnoyarsk</option>
+						<option value="Asia/Hong_Kong">(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi</option>
+						<option value="Asia/Kuala_Lumpur">(GMT+08:00) Kuala Lumpur, Singapore</option>
+						<option value="Asia/Irkutsk">(GMT+08:00) Irkutsk, Ulaan Bataar</option>
+						<option value="Australia/Perth">(GMT+08:00) Perth</option>
+						<option value="Asia/Taipei">(GMT+08:00) Taipei</option>
+						<option value="Asia/Tokyo">(GMT+09:00) Osaka, Sapporo, Tokyo</option>
+						<option value="Asia/Seoul">(GMT+09:00) Seoul</option>
+						<option value="Asia/Yakutsk">(GMT+09:00) Yakutsk</option>
+						<option value="Australia/Adelaide">(GMT+09:30) Adelaide</option>
+						<option value="Australia/Darwin">(GMT+09:30) Darwin</option>
+						<option value="Australia/Brisbane">(GMT+10:00) Brisbane</option>
+						<option value="Australia/Canberra">(GMT+10:00) Canberra, Melbourne, Sydney</option>
+						<option value="Australia/Hobart">(GMT+10:00) Hobart</option>
+						<option value="Pacific/Guam">(GMT+10:00) Guam, Port Moresby</option>
+						<option value="Asia/Vladivostok">(GMT+10:00) Vladivostok</option>
+						<option value="Asia/Magadan">(GMT+11:00) Magadan, Solomon Is., New Caledonia</option>
+						<option value="Pacific/Auckland">(GMT+12:00) Auckland, Wellington</option>
+						<option value="Pacific/Fiji">(GMT+12:00) Fiji, Kamchatka, Marshall Is.</option>
+						<option value="Pacific/Tongatapu">(GMT+13:00) Nuku'alofa</option>
+					</select>
+					<div class="rex-space-32px"></div>
+					<a href="#">
+						<button class="rex-btn-primary rex-fs-small custom-btn-primary">Save</button>
+					</a>
+				</div>
+				<div class="rex-space-32px"></div>
+				<div class="rex-box-shadow2 rex-background-white rex-curDiv-8px rex-pad32px">
+					<h2 class="rex-fs-large rex-color-blacktint">Javascript snippet</h2>
+					<p class="rex-color-gray rex-fs-small rex-mt-8px">Include this snippet in the &#60;head&#62; of your website.</p>
+					<div class="rex-space-8px"></div>
+					<div class="rex-space-16px"></div>
+					<textarea type="text" class="rex-input-primary rex-width-100pp rex-fs-small rex-noresize rex-lh-x-small" disabled rows="3">&#60;script async defer data-domain="rexanthony.tk" src="https://plausible.io/js/plausible.js"&#62;&#60;/script&#62;
+					</textarea>
+					<div class="rex-space-32px"></div>
+					<a href="#">
+						<button class="rex-btn-secondary rex-fs-small custom-btn-primary">Copy snippet</button>
+					</a>
+				</div>
+				<div class="rex-space-32px"></div>
+				<div class="rex-space-32px"></div>
+				
+			</div>
+		</div>
+		<div class="rex-space-32px"></div>
+		<div class="rex-space-32px"></div>
+		<div class="rex-space-32px"></div>
+	</div>
+</body>
+</html>
