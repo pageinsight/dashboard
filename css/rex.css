@@ -74,6 +74,10 @@ body{
 	padding: 16px;
 }
 
+.rex-space-64px{
+	padding: 32px;
+}
+
 .rex-space-10pp{
 	height: 10%;
 }

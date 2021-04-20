@@ -46,6 +46,9 @@
 	line-height: 24px;
 }
 
+.rex-lh-x-small{
+	line-height: 20px;
+}
 
 
 @media (max-width: 1280px){

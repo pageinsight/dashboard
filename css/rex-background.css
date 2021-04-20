@@ -11,8 +11,16 @@
 	background-color: rgb(56, 89, 220)
 }
 
+.rex-background-input{
+	background-color: rgb(243, 244, 246);
+}
+
 .rex-background-custom-1{
 	background-color: rgb(229, 231, 235);
+}
+
+.rex-background-body{
+	background-color: rgb(244, 245, 255);
 }
 
 /*Default*/
@@ -25,7 +33,7 @@
 }
 
 .rex-background-green{
-	background-color: green;
+	background-color: rgb(0, 200, 0);
 }
 
 .rex-background-yellow{
