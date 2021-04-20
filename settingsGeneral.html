@@ -68,7 +68,7 @@
 				</label>
 				<input type="checkbox" id="check" class="rex-display-gone">
 				<div id="menu" class="custom-settings-list"><!-- the list of settings -->
-					<div class="rex-pad8px rex-selectable-item-background rex-curDiv-8px">
+					<div class="rex-pad8px rex-selectable-item-background rex-curDiv-8px rex-item-selected">
 						<a href="settingsGeneral.html" class="rex-color-black rex-display-block">General</a>
 					</div>
 					<div class="rex-pad8px rex-selectable-item-background rex-curDiv-8px rex-mt-8px">
@@ -194,17 +194,39 @@
 					</textarea>
 					<div class="rex-space-32px"></div>
 					<a href="#">
-						<button class="rex-btn-secondary rex-fs-small custom-btn-primary">Copy snippet</button>
+						<button class="rex-btn-primary rex-fs-small custom-btn-primary">Copy snippet</button>
 					</a>
 				</div>
 				<div class="rex-space-32px"></div>
 				<div class="rex-space-32px"></div>
-				
 			</div>
 		</div>
 		<div class="rex-space-32px"></div>
 		<div class="rex-space-32px"></div>
 		<div class="rex-space-32px"></div>
+	</div>
+
+	<div class="custom-toast rex-position-fixed rex-z-index-1 rex-top-16px rex-right-16px rex-width-400px rex-height-80px rex-background-white rex-curDiv-8px rex-box-shadow1 rex-pad16px rex-display-gone">
+		<div class="custom-website-item-grid">
+			<div>
+				<img src="images/icons/ic_checkmark.png" class="rex-width-20px rex-height-20px">
+			</div>
+			<div class="rex-pl-16px">
+				<div class="custom-website-item-settings-grid">
+					<div class="rex-fs-small rex-text-overflow-ellipses rex-weight-bold">
+						Success!
+					</div>
+					<div>
+						<a href="#">
+							<img src="images/icons/ic_cross.png" class="rex-width-20px rex-height-20px">
+						</a>
+					</div>
+				</div>
+				<div class="rex-mt-8px rex-fs-small rex-text-overflow-ellipses rex-color-gray">
+					Your settings have been updated
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

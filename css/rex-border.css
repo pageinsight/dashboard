@@ -54,6 +54,14 @@
 	border-bottom: 1px solid rgb(64, 64, 64);
 }
 
+.rex-border-right-gray{
+	border-right: 1px solid rgb(210, 210, 210);
+}
+
+.rex-curDiv-50pp{
+	border-radius: 50%;
+}
+
 .rex-curDiv-0{
 	border-radius: 0;
 }

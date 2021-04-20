@@ -124,6 +124,12 @@ body{
 	grid-template-rows: auto;
 }
 
+.custom-shared-link-user-grid{
+	display: grid;
+	grid-template-columns: auto 220px;
+	grid-template-rows: auto;
+}
+
 @media (max-width: 1100px) {
 	.custom-responsive-container{
 		width: 90%;
@@ -171,6 +177,12 @@ body{
 	.custom-signup-container-list{
 		display: block;
 	}
+	.custom-toast{
+		top: unset;
+		right: 16px;
+		left: unset;
+		bottom: 16px;		
+	}
 }
 
 @media (max-width: 800px) {
@@ -198,6 +210,14 @@ body{
 		display: block;
 		width: 230px;
 		margin: 0 auto;
+	}
+	.custom-toast{
+		top: unset;
+		right: unset;
+		left: 50%;
+		bottom: 16px;		
+		transform: translateX(-50%);
+		width: 90%;
 	}
 }
 

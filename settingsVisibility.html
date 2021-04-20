@@ -72,7 +72,7 @@
 					<div class="rex-pad8px rex-selectable-item-background rex-curDiv-8px">
 						<a href="settingsGeneral.html" class="rex-color-black rex-display-block">General</a>
 					</div>
-					<div class="rex-pad8px rex-selectable-item-background rex-curDiv-8px rex-mt-8px">
+					<div class="rex-pad8px rex-selectable-item-background rex-curDiv-8px rex-mt-8px rex-item-selected">
 						<a href="settingsVisibility.html" class="rex-color-black rex-display-block">Visibility</a>
 					</div>
 					<div class="rex-pad8px rex-selectable-item-background rex-curDiv-8px rex-mt-8px">
@@ -106,11 +106,89 @@
 						</div>
 					</div>
 				</div>
+				<div class="rex-space-32px"></div>
+				<div class="rex-box-shadow2 rex-background-white rex-curDiv-8px rex-pad32px">
+					<h2 class="rex-fs-large rex-color-blacktint">Shared links</h2>
+					<p class="rex-color-gray rex-fs-small rex-mt-8px rex-lh-small">You can share your stats privately by generating a shared link. The links are impossible to guess and you can add password protection for extra security.</p>
+					<div class="rex-display-block">
+						<div class="rex-space-32px"></div>
+						<div>
+							<div>
+								<span class="rex-vertical-align rex-fs-small rex-weight-bold rex-mr-8px">Rex</span><img src="images/icons/ic_padlock_locked.png" class="rex-vertical-align rex-width-16px rex-height-16px">
+							</div>
+							<div class="custom-shared-link-user-grid rex-mt-8px rex-fs-small">
+								<div>
+									<input type="text" class="rex-width-100pp rex-height-100pp rex-fs-small rex-pl-8px rex-curDiv-tl-8px rex-curDiv-bl-8px rex-border-lightgray" value="https://plausible.io/share/rexanthony.tk?auth=690n1JG7v8HOjdmrEjxew" disabled>
+								</div>
+								<div class="rex-display-grid3 rex-center-text rex-background-custom-1">
+									<div class="rex-selectable-item-background rex-pad8px rex-hover rex-border-right-gray">
+										Copy
+									</div>
+									<div class="rex-selectable-item-background rex-hover rex-pad8px rex-border-right-gray">
+										<a href="settingsAddSharedLink.html" class="rex-pad16px">Edit</a>
+									</div>
+									<div class="rex-selectable-item-background rex-pad8px rex-color-danger rex-hover">
+										Delete
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="rex-space-16px rex-border-bottom-lightgray"></div>
+						<div class="rex-space-16px"></div>
+						<div>
+							<div>
+								<span class="rex-vertical-align rex-fs-small rex-weight-bold rex-mr-8px">William</span><img src="images/icons/ic_padlock_unlocked.png" class="rex-vertical-align rex-width-16px rex-height-16px">
+							</div>
+							<div class="custom-shared-link-user-grid rex-mt-8px rex-fs-small">
+								<div>
+									<input type="text" class="rex-width-100pp rex-height-100pp rex-fs-small rex-pl-8px rex-curDiv-tl-8px rex-curDiv-bl-8px rex-border-lightgray" value="https://rexanthony.ga/share/rexanthony.tk?auth=690n1JG7v8HOjdmrEjxew" disabled>
+								</div>
+								<div class="rex-display-grid3 rex-center-text rex-background-custom-1">
+									<div class="rex-selectable-item-background rex-pad8px rex-hover rex-border-right-gray">
+										Copy
+									</div>
+									<div class="rex-selectable-item-background rex-hover rex-pad8px rex-border-right-gray">
+										<a href="settingsAddSharedLink.html" class="rex-pad16px">Edit</a>
+									</div>
+									<div class="rex-selectable-item-background rex-pad8px rex-color-danger rex-hover">
+										Delete
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="rex-space-32px"></div>
+					<a href="settingsAddSharedLink.html">
+						<button class="rex-btn-primary rex-fs-small custom-btn-primary">New link</button>
+					</a>
+				</div>
 			</div>
 		</div>
 		<div class="rex-space-32px"></div>
 		<div class="rex-space-32px"></div>
 		<div class="rex-space-32px"></div>
+		<div class="custom-toast rex-position-fixed rex-z-index-1 rex-top-16px rex-right-16px rex-width-400px rex-height-80px rex-background-white rex-curDiv-8px rex-box-shadow1 rex-pad16px rex-display-gone">
+			<div class="custom-website-item-grid">
+				<div>
+					<img src="images/icons/ic_checkmark.png" class="rex-width-20px rex-height-20px">
+				</div>
+				<div class="rex-pl-16px">
+					<div class="custom-website-item-settings-grid">
+						<div class="rex-fs-small rex-text-overflow-ellipses rex-weight-bold">
+							Success!
+						</div>
+						<div>
+							<a href="#">
+								<img src="images/icons/ic_cross.png" class="rex-width-20px rex-height-20px">
+							</a>
+						</div>
+					</div>
+					<div class="rex-mt-8px rex-fs-small rex-text-overflow-ellipses rex-color-gray">
+						Your settings have been updated
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

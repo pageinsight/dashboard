@@ -296,6 +296,40 @@
 	top: 500%;
 }
 
+.rex-top-10px{
+	top: 10px;
+}
+
+.rex-top-16px{
+	top: 16px;
+}
+
+.rex-top-20px{
+	top: 20px;
+}
+
+.rex-top-30px{
+	top: 30px;
+}
+
+
+/*right*/
 .rex-right-0{
 	right: 0;
+}
+
+.rex-right-10px{
+	right: 10px;
+}
+
+.rex-right-16px{
+	right: 16px;
+}
+
+.rex-right-20px{
+	right: 20px;
+}
+
+.rex-right-30px{
+	right: 30px;
 }

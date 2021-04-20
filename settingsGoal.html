@@ -75,7 +75,7 @@
 					<div class="rex-pad8px rex-selectable-item-background rex-curDiv-8px rex-mt-8px">
 						<a href="settingsVisibility.html" class="rex-color-black rex-display-block">Visibility</a>
 					</div>
-					<div class="rex-pad8px rex-selectable-item-background rex-curDiv-8px rex-mt-8px">
+					<div class="rex-pad8px rex-selectable-item-background rex-curDiv-8px rex-mt-8px rex-item-selected">
 						<a href="settingsGoal.html" class="rex-color-black rex-display-block">Goals</a>
 					</div>
 					<div class="rex-pad8px rex-selectable-item-background rex-curDiv-8px rex-mt-8px">
@@ -90,11 +90,34 @@
 				<div class="rex-box-shadow2 rex-background-white rex-curDiv-8px rex-pad32px">
 					<h2 class="rex-fs-large rex-color-blacktint">Goals</h2>
 					<p class="rex-color-gray rex-fs-small rex-mt-8px rex-lh-small">Define actions that you want your users to take like visiting a certain page, submitting a form, etc.</p>
-					<div class="rex-space-16px"></div>
-					<div class="rex-space-8px"></div>
-					<p class="rex-color-black rex-fs-normal">No goals configured for this site yet</p>
-					<div class="rex-space-16px"></div>
-					<a href="#">
+					<div class="rex-space-32px"></div>
+					<p class="rex-color-black rex-fs-normal rex-display-gone">No goals configured for this site yet</p>
+					<div class="rex-display-block">
+						<div class="custom-website-item-settings-grid">
+							<div class="rex-fs-small rex-text-overflow-ellipses">
+								Visit /signup.html
+							</div>
+							<div>
+								<a href="#">
+									<img src="images/icons/ic_trash.png" class="rex-width-20px rex-height-20px">
+								</a>
+							</div>
+						</div>
+						<div class="rex-space-16px rex-border-bottom-lightgray"></div>
+						<div class="rex-space-16px"></div>
+						<div class="custom-website-item-settings-grid">
+							<div class="rex-fs-small rex-text-overflow-ellipses">
+								connections
+							</div>
+							<div>
+								<a href="#">
+									<img src="images/icons/ic_trash.png" class="rex-width-20px rex-height-20px">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="rex-space-32px"></div>
+					<a href="settingsAddGoal.html">
 						<button class="rex-btn-primary rex-fs-normal custom-btn-primary">Add goal</button>
 					</a>
 				</div>
@@ -103,6 +126,28 @@
 		<div class="rex-space-32px"></div>
 		<div class="rex-space-32px"></div>
 		<div class="rex-space-32px"></div>
+		<div class="custom-toast rex-position-fixed rex-z-index-1 rex-top-16px rex-right-16px rex-width-400px rex-height-80px rex-background-white rex-curDiv-8px rex-box-shadow1 rex-pad16px rex-display-block">
+			<div class="custom-website-item-grid">
+				<div>
+					<img src="images/icons/ic_checkmark.png" class="rex-width-20px rex-height-20px">
+				</div>
+				<div class="rex-pl-16px">
+					<div class="custom-website-item-settings-grid">
+						<div class="rex-fs-small rex-text-overflow-ellipses rex-weight-bold">
+							Success!
+						</div>
+						<div>
+							<a href="#">
+								<img src="images/icons/ic_cross.png" class="rex-width-20px rex-height-20px">
+							</a>
+						</div>
+					</div>
+					<div class="rex-mt-8px rex-fs-small rex-text-overflow-ellipses rex-color-gray">
+						Goal created successfully
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
