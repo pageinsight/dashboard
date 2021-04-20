@@ -126,7 +126,7 @@ body{
 
 .custom-shared-link-user-grid{
 	display: grid;
-	grid-template-columns: auto 220px;
+	grid-template-columns: auto 190px;
 	grid-template-rows: auto;
 }
 
