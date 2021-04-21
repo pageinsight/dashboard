@@ -70,6 +70,10 @@
 	padding-top: 8px;
 }
 
+.rex-pt-12px{
+	padding-top: 12px;
+}
+
 .rex-pt-16px{
 	padding-top: 16px;
 }
@@ -92,6 +96,10 @@
 
 .rex-pb-8px{
 	padding-bottom: 8px;
+}
+
+.rex-pb-12px{
+	padding-bottom: 12px;
 }
 
 .rex-pb-16px{

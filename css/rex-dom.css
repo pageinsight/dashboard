@@ -56,11 +56,6 @@
 	cursor: pointer;
 }
 
-.rex-selectable-item-background:hover, .rex-item-selected{
-	background-color: rgba(180, 180, 180, 0.2);
-	transition: all .3s;
-}
-
 .rex-overflow-hidden{
 	overflow: hidden;
 }

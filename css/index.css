@@ -141,6 +141,39 @@ body{
 	width: 100%;
 }
 
+.custom-cd-site-dropdown-content{
+	top: 35px;
+	min-width: 270px;
+	border-radius: 8px
+}
+
+.custom-date-selector-size{
+	width: 190px;
+	height: 40px;
+}
+
+.custom-sticky-nav-responsive{
+	height: 60px;
+}
+
+.custom-sticky-nav-content-grid{
+	height: 100%;
+}
+
+.custom-sticky-nav-content-table{
+	height: 100%;
+}
+
+.custom-sticky-nav-realtime-content{
+	text-align: left;
+	padding-left: 16px;
+}
+
+.custom-sticky-nav-date-table{
+	float: right;
+	height: 100%;
+}
+
 @media (max-width: 1100px) {
 	.custom-responsive-container{
 		width: 90%;
@@ -206,6 +239,35 @@ body{
 	.custom-dashboard-grid-responsive div div{
 		padding: 16px;
 	}
+	.custom-sticky-nav-content-grid{
+		display: block;
+	}
+	.custom-sticky-nav-content-table{
+		width: 100%;
+		height: 50px;
+	}
+	.custom-sticky-nav-realtime-content{
+		text-align: right;
+		padding: 0;
+	}
+	.custom-date-selector-container{
+		margin-top: 8px;
+		position: relative;
+	}
+	.custom-sticky-nav-responsive{
+		padding: 8px 0;
+	}
+	.custom-sticky-nav-date-table{
+		float: none;
+		position: absolute;
+		right: 0;
+	}
+	.custom-date-selector-size{
+		/*width: 100%;*/
+	}
+	.custom-sticky-nav-responsive{
+		height: 120px;
+	}
 }
 
 @media (max-width: 800px) {
@@ -260,11 +322,21 @@ body{
 	.custom-signup-container-form{
 		padding: 0;
 	}
+	.custom-date-selector-size{
+		width: 100%;
+	}
+	.custom-sticky-nav-date-table{
+		width: 100%;
+		position: relative;
+	}
 }
 
 @media (max-width: 384px){
 	.custom-subscription-plan-grid{
 		width: 100%;
+	}
+	.custom-sticky-nav-realtime-content{
+		display: none;
 	}
 }
 

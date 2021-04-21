@@ -8,9 +8,13 @@
 	<link type="image/x-icon" rel="icon" href="https://assets.pageinsight.app/icon.png"/>
 	<title>Page Insight Analytics | Settings</title>
 	<link type="text/css" rel="stylesheet" href="css/index.css"/>
+	<link type="text/css" rel="stylesheet" href="css/datepicker.min.css" />
+	<link type="text/css" rel="stylesheet" href="css/analyticsDateRangePicker.css">
+	<script type="text/javascript" src="js/datepicker-full.min.js"></script>
+	<script type="text/javascript" src="js/analyticsDateRangePicker.js"></script>
 	<script type="text/javascript" src="js/util.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript" src="js/dashboard.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@3.1.1/dist/chart.min.js"></script>
 	<script async defer data-domain="pageinsighthq.app" src="https://plausible.io/js/plausible.js"></script>
 </head>
 <body>
@@ -39,7 +43,7 @@
 										<img src="images/icons/ic_ellipses.png" class="rex-width-20px rex-height-20px rex-vertical-align"/>
 									</span>
 									<div id="settingsDropdown" class="rex-cd-dropdown-content">
-										<a href="settings.html" class="rex-border-bottom-gray">Settings</a>
+										<a href="settings.html" class="rex-border-bottom-lightgray">Settings</a>
 										<a href="#">Log out</a>
 									</div>
 								</div>
@@ -56,9 +60,7 @@
 				<h1 class="rex-fs-large rex-color-black rex-lh-small">Waiting for first pageview
 				on pageinsight.app</h1>
 				<div class="rex-space-32px"></div>
-				<div class="rex-width-10px rex-height-10px rex-curDiv-50pp rex-center-div-horizontal rex-background-green pulse-animation-green">
-					
-				</div>
+				<div class="rex-width-10px rex-height-10px rex-curDiv-50pp rex-center-div-horizontal rex-background-green pulse-animation-green"></div>
 				<div class="rex-space-32px"></div>
 				<p class="rex-color-gray rex-fs-x-small rex-lh-x-small">
 					Need to see the snippet again? <a href="snippet.html" class="rex-color-link">Click here</a>
@@ -72,13 +74,106 @@
 	<div class="rex-space-8px"></div>
 	<div class="rex-display-block">
 		<div id="stickyNav" class="rex-background-body">
-			<div class="custom-responsive-container rex-height-60px">
-				
+			<div class="custom-responsive-container custom-sticky-nav-responsive">
+				<div class="rex-display-grid2 custom-sticky-nav-content-grid">
+					<div>
+						<table class="custom-sticky-nav-content-table">
+							<tr>
+								<td class="rex-hover">
+									<div class="rex-cd-dropdown rex-vertical-align">
+										<span id="dashboardSiteDropdownToggle" class="rex-cd-dropbtn rex-pad8px rex-curDiv-8px">
+											<img src="https://assets.pageinsight.app/icon-128px.png" class="rex-width-20px rex-height-20px rex-vertical-align rex-mr-8px">
+											<span class="rex-weight-bold rex-fs-normal rex-text-overflow-ellipses rex-mr-8px rex-vertical-align">pageinsight.app</span>
+											<img src="images/icons/ic_dropdown_arrow.png" class="rex-width-16px rex-height-16px rex-vertical-align"/>
+										</span>
+										<div id="dashboardSiteDropdown" class="rex-cd-dropdown-content-min custom-cd-site-dropdown-content">
+											<a href="settingsGeneral.html">
+												<table class="rex-selectable-item-background rex-border-bottom-lightgray rex-width-100pp rex-pt-12px rex-pb-12px rex-pl-16px rex-pr-16px">
+													<tr>
+														<td class="rex-width-16px">
+															<img src="images/icons/ic_gear.png" class="rex-width-16px rex-height-16px rex-vertical-align">
+														</td>
+														<td class="rex-pl-8px">
+															<span class="rex-fs-small rex-color-black rex-vertical-align">Site settings</span>
+														</td>
+													</tr>
+												</table>
+											</a>
+											<a href="dashboard.html">
+												<table class="rex-selectable-item-background rex-width-100pp rex-pt-12px rex-pb-12px rex-pl-16px rex-pr-16px">
+													<tr>
+														<td class="rex-width-16px">
+															<img src="https://assets.pageinsight.app/icon-128px.png" class="rex-width-16px rex-height-16px rex-vertical-align">
+														</td>
+														<td class="rex-pl-8px">
+															<span class="rex-fs-small rex-color-black rex-vertical-align">pageinsight.app</span>
+														</td>
+													</tr>
+												</table>
+											</a>
+											<a href="dashboard.html">
+												<table class="rex-selectable-item-background rex-width-100pp rex-pt-12px rex-pb-12px rex-pl-16px rex-pr-16px">
+													<tr>
+														<td class="rex-width-16px">
+															<img src="images/icons/ic_web.png" class="rex-width-16px rex-height-16px rex-vertical-align">
+														</td>
+														<td class="rex-pl-8px">
+															<span class="rex-fs-small rex-color-black rex-vertical-align">dashboard.pageinsight.app</span>
+														</td>
+													</tr>
+												</table>
+											</a>
+											<a href="dashboard.html">
+												<table class="rex-selectable-item-background rex-width-100pp rex-pt-12px rex-pb-12px rex-pl-16px rex-pr-16px rex-border-bottom-lightgray">
+													<tr>
+														<td class="rex-width-16px">
+															<img src="images/icons/ic_web.png" class="rex-width-16px rex-height-16px rex-vertical-align">
+														</td>
+														<td class="rex-pl-8px">
+															<span class="rex-fs-small rex-color-black rex-vertical-align">support.pageinsight.app</span>
+														</td>
+													</tr>
+												</table>
+											</a>
+											<a href="addWebsite.html">
+												<table class="rex-selectable-item-background rex-width-100pp rex-pt-12px rex-pb-12px rex-pl-16px rex-pr-16px">
+													<tr>
+														<td class="rex-width-16px">
+															<img src="images/icons/ic_plus.png" class="rex-width-16px rex-height-16px rex-vertical-align">
+														</td>
+														<td class="rex-pl-8px">
+															<span class="rex-fs-small rex-color-black rex-vertical-align">Add site</span>
+														</td>
+													</tr>
+												</table>
+											</a>
+											
+										</div>
+									</div>
+								</td>
+								<td class="custom-sticky-nav-realtime-content">
+									<span class="rex-width-10px rex-height-10px rex-curDiv-50pp rex-background-green pulse-animation-green rex-vertical-align rex-mr-8px rex-display-inline-block"></span>
+									<span class="rex-color-blacktint rex-fs-small rex-vertical-align rex-weight-bold">2 current visitors</span>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="custom-date-selector-container">
+						<table class="custom-sticky-nav-date-table">
+							<tr>
+								<td>
+									<div id="myPicker" class="rex-vertical-align custom-date-selector-size rex-background-white rex-curDiv-4px rex-box-shadow2"></div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
 			</div>
 		</div>
+		<div class="rex-space-16px"></div>
 		<div class="custom-responsive-container custom-content">
 			<div class="rex-background-white rex-curDiv-8px rex-height-400px rex-box-shadow1 rex-pad16px">
-				Stats
+				<canvas id="myChart" width="400" height="150"></canvas>
 			</div>
 			<div class="rex-space-32px"></div>
 			<div class="rex-display-grid2 custom-dashboard-grid-responsive">
