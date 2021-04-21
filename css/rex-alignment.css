@@ -19,6 +19,10 @@
 	vertical-align: top;
 }
 
+.rex-vertical-align-bottom{
+	vertical-align: bottom;
+}
+
 .rex-vertical-align-span{
 	min-height: 100px;
 	display: inline-flex;

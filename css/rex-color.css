@@ -44,6 +44,10 @@
 	color: green;
 }
 
+.rex-color-green-pure{
+	color: rgb(0, 230, 0);
+}
+
 .rex-color-lightgray{
 	color: rgb(180, 180, 180);
 }

@@ -58,6 +58,10 @@
 	border-right: 1px solid rgb(210, 210, 210);
 }
 
+.rex-border-right-lightgray{
+	border-right: 1px solid rgb(235, 235, 235);
+}
+
 .rex-curDiv-50pp{
 	border-radius: 50%;
 }

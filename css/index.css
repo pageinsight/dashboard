@@ -141,6 +141,10 @@ body{
 	width: 100%;
 }
 
+.custom-sticky + .custom-content{
+	padding-top: 60px;
+}
+
 .custom-cd-site-dropdown-content{
 	top: 35px;
 	min-width: 270px;
@@ -172,6 +176,10 @@ body{
 .custom-sticky-nav-date-table{
 	float: right;
 	height: 100%;
+}
+
+.custom-dashboard-download-stat{
+	padding-right: 30px;
 }
 
 @media (max-width: 1100px) {
@@ -267,6 +275,29 @@ body{
 	}
 	.custom-sticky-nav-responsive{
 		height: 120px;
+	}
+
+	.custom-sticky + .custom-content{
+		padding-top: 120px;
+	}
+
+	.custom-main-event-grid{
+		display: block;
+		width: 100%;
+	}
+	.custom-main-event-grid div:nth-child(1) div:nth-child(2){
+		border: 0;
+	}
+	.custom-main-event-grid div div{
+		/*text-align: left;*/
+		display: block;
+		padding-left: 8px;
+	}
+	.custom-main-event-grid2{
+		margin-top: 16px;
+	}
+	.custom-dashboard-download-stat{
+		padding-right: 8px;
 	}
 }
 
