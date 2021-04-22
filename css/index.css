@@ -148,7 +148,13 @@ body{
 .custom-cd-site-dropdown-content{
 	top: 35px;
 	min-width: 270px;
-	border-radius: 8px
+	border-radius: 4px
+}
+
+.custom-cd-filter-dropdown-content{
+	top: 37px;
+	min-width: 240px;
+	border-radius: 4px
 }
 
 .custom-date-selector-size{
@@ -180,6 +186,10 @@ body{
 
 .custom-dashboard-download-stat{
 	padding-right: 30px;
+}
+
+#filterContainer{
+	display: table-cell;
 }
 
 @media (max-width: 1100px) {
@@ -355,10 +365,6 @@ body{
 	}
 	.custom-date-selector-size{
 		width: 100%;
-	}
-	.custom-sticky-nav-date-table{
-		width: 100%;
-		position: relative;
 	}
 }
 

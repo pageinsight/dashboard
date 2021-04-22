@@ -162,7 +162,68 @@
 						<table class="custom-sticky-nav-date-table">
 							<tr>
 								<td>
-									<div id="myPicker" class="rex-vertical-align custom-date-selector-size rex-background-white rex-curDiv-4px rex-box-shadow2"></div>
+									<table class="rex-vertical-align">
+										<tr>
+											<td id="filterContainer">
+												<div class="rex-cd-dropdown rex-vertical-align rex-mr-8px ">
+													<span id="dashboardFilterDropdownToggle" class="rex-cd-dropbtn rex-pt-12px rex-pb-12px rex-pl-16px rex-pr-16px rex-curDiv-4px rex-background-white rex-box-shadow2 rex-hover">
+														<span class="rex-weight-bold rex-fs-normal rex-text-overflow-ellipses rex-mr-8px rex-vertical-align">Filter</span>
+														<img src="images/icons/ic_dropdown_arrow.png" class="rex-width-16px rex-height-16px rex-vertical-align"/>
+													</span>
+													<div id="dashboardFilterDropdown" class="rex-cd-dropdown-content-min custom-cd-filter-dropdown-content">
+														<div class="custom-website-item-settings-grid rex-pt-12px rex-pb-12px rex-pr-16px rex-pl-16px">
+															<div class="rex-fs-small rex-text-overflow-ellipses rex-color-black">
+																Source: <b>Google</b>
+															</div>
+															<div>
+																<a href="#">
+																	<img src="images/icons/ic_cross.png" class="rex-width-20px rex-height-20px">
+																</a>
+															</div>
+														</div>
+
+														<div class="custom-website-item-settings-grid rex-pt-12px rex-pb-12px rex-pr-16px rex-pl-16px">
+															<div class="rex-fs-small rex-text-overflow-ellipses rex-color-black">
+																Screen size: <b>Desktop</b>
+															</div>
+															<div>
+																<a href="#">
+																	<img src="images/icons/ic_cross.png" class="rex-width-20px rex-height-20px">
+																</a>
+															</div>
+														</div>
+
+														<div class="custom-website-item-settings-grid rex-pt-12px rex-pb-12px rex-pr-16px rex-pl-16px">
+															<div class="rex-fs-small rex-text-overflow-ellipses rex-color-black">
+																Country: <b>Nigeria</b>
+															</div>
+															<div>
+																<a href="#">
+																	<img src="images/icons/ic_cross.png" class="rex-width-20px rex-height-20px">
+																</a>
+															</div>
+														</div>
+
+														<div class="custom-website-item-settings-grid rex-pt-12px rex-pb-12px rex-pr-16px rex-pl-16px">
+															<div class="rex-fs-small rex-text-overflow-ellipses rex-color-black">
+																Page: <b>/upgrade</b>
+															</div>
+															<div>
+																<a href="#">
+																	<img src="images/icons/ic_cross.png" class="rex-width-20px rex-height-20px">
+																</a>
+															</div>
+														</div>
+
+														
+													</div>
+												</div>
+											</td>
+											<td>
+												<div id="myPicker" class="rex-vertical-align custom-date-selector-size rex-background-white rex-curDiv-4px rex-box-shadow2"></div>
+											</td>
+										</tr>
+									</table>
 								</td>
 							</tr>
 						</table>
@@ -172,7 +233,7 @@
 		</div>
 		<div class="custom-responsive-container custom-content">
 			<div class="rex-space-16px"></div>
-			<div class="rex-background-white rex-curDiv-8px rex-height-400px rex-box-shadow1 rex-pad16px">
+			<div class="rex-background-white rex-curDiv-8px rex-box-shadow1 rex-pad16px">
 				<div class="rex-display-grid2 rex-width-700px custom-main-event-grid">
 					<div class="rex-display-grid2">
 						<div class="rex-border-right-lightgray rex-pad8px rex-center-text">
@@ -256,7 +317,7 @@
 						<img src="images/icons/ic_download.png" class="rex-width-24px rex-height-24px">
 					</a>
 				</div>
-				<canvas id="myChart" width="400" height="150"></canvas>
+				<canvas id="myChart" height="110"></canvas>
 			</div>
 			<div class="rex-space-32px"></div>
 			<div class="rex-display-grid2 custom-dashboard-grid-responsive">
