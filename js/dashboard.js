@@ -71,7 +71,6 @@ window.onload = () => {
 
 	var ctx = document.getElementById('myChart').getContext('2d');
 	var myChart = null;
-	const skipped = (ctx, value) => ctx.p0.skip || ctx.p1.skip ? value : undefined;
 	function createChart(){
 		myChart = new Chart(ctx, {
 			type: 'line',
@@ -80,14 +79,11 @@ window.onload = () => {
 				datasets: [
 				{
 					label: 'Visitors',
-					fill: true,
-					data: [2, 4, 7, 9, NaN, 5],
+					fill: true,// fill the background color under the chart
+					data: [12, 5, 3, 9, 6, 12],
 					backgroundColor: 'rgba(56, 89, 220, 0.2)',
 					borderColor: 'rgb(56, 89, 220)',
-					borderWidth: 3,
-					segment: {
-						borderDash: ctx => skipped(ctx, [6, 6])
-					}
+					borderWidth: 3// border width of the chart
 				}
 				]
 			},
@@ -104,6 +100,11 @@ window.onload = () => {
 				scales: {
 					y: {
 						beginAtZero: true
+					},
+					x: {// remove the vertical grid lines
+						grid: {
+							display: false
+						}
 					}
 				},
 				elements: { //remove the dot on the line
@@ -130,7 +131,6 @@ window.onload = () => {
 				myChart.destroy();
 				ctx.canvas.height = 230;
 				createChart();
-				console.log("chart updated 4");
 			}
 		}else if(w < 500){
 			if(resizeValue != 3){
@@ -138,7 +138,6 @@ window.onload = () => {
 				myChart.destroy();
 				ctx.canvas.height = 200;
 				createChart();
-				console.log("chart updated 3");
 			}			
 		}else if(w < 775){
 			if(resizeValue != 2){
@@ -146,7 +145,6 @@ window.onload = () => {
 				myChart.destroy();
 				ctx.canvas.height = 170;
 				createChart();
-				console.log("chart updated 2");
 			}
 		}else if(w < 950){
 			if(resizeValue != 1){
@@ -154,7 +152,6 @@ window.onload = () => {
 				myChart.destroy();
 				ctx.canvas.height = 140;
 				createChart();
-				console.log("chart updated 1");
 			}
 		}else if(w < 1000){
 			if(resizeValue != 0){
@@ -162,7 +159,6 @@ window.onload = () => {
 				myChart.destroy();
 				ctx.canvas.height = 110;
 				createChart();
-				console.log("chart updated 0");
 			}
 		}
 	}
