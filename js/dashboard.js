@@ -71,37 +71,44 @@ window.onload = () => {
 
 	var ctx = document.getElementById('myChart').getContext('2d');
 	var myChart = null;
+	const skipped = (ctx, value) => ctx.p0.skip || ctx.p1.skip ? value : undefined;
 	function createChart(){
 		myChart = new Chart(ctx, {
 			type: 'line',
 			data: {
-				labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-				datasets: [{
-					label: '# of Votes',
-					data: [12, 19, 3, 5, 2, 3],
-					backgroundColor: [
-					'rgba(255, 99, 132, 0.2)',
-					'rgba(54, 162, 235, 0.2)',
-					'rgba(255, 206, 86, 0.2)',
-					'rgba(75, 192, 192, 0.2)',
-					'rgba(153, 102, 255, 0.2)',
-					'rgba(255, 159, 64, 0.2)'
-					],
-					borderColor: [
-					'rgba(255, 99, 132, 1)',
-					'rgba(54, 162, 235, 1)',
-					'rgba(255, 206, 86, 1)',
-					'rgba(75, 192, 192, 1)',
-					'rgba(153, 102, 255, 1)',
-					'rgba(255, 159, 64, 1)'
-					],
-					borderWidth: 1
-				}]
+				labels: ['Apr 21', 'Apr 22', 'Apr 23', 'Apr 24', 'Apr 25', 'Apr 26'],
+				datasets: [
+				{
+					label: 'Visitors',
+					fill: true,
+					data: [2, 4, 7, 9, NaN, 5],
+					backgroundColor: 'rgba(56, 89, 220, 0.2)',
+					borderColor: 'rgb(56, 89, 220)',
+					borderWidth: 3,
+					segment: {
+						borderDash: ctx => skipped(ctx, [6, 6])
+					}
+				}
+				]
 			},
 			options: {
+				interaction: {//tooltip appears on hovering over chart
+					mode: 'index',
+					intersect: false
+				},
+				plugins:{// remove the dataset label
+					legend: {
+						display: false
+					}
+				},
 				scales: {
 					y: {
 						beginAtZero: true
+					}
+				},
+				elements: { //remove the dot on the line
+					point:{
+						radius: 0
 					}
 				}
 			}
@@ -111,9 +118,7 @@ window.onload = () => {
 	createChart();
 
 	let resizeValue = -1;
-
-
-	function displayWindowSize(){
+	function updateWindowSize(){
 		var w = document.documentElement.clientWidth;
 		var h = document.documentElement.clientHeight;
 
@@ -162,9 +167,9 @@ window.onload = () => {
 		}
 	}
 
-	window.addEventListener("resize", displayWindowSize);
+	window.addEventListener("resize", updateWindowSize);
 
-	displayWindowSize();
+	updateWindowSize();
 
 	let myPicker = document.getElementById("myPicker");
 	dateRangePicker = new AnalyticsDateRangePicker(myPicker, {
