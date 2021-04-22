@@ -52,6 +52,16 @@
 	background-color: transparent;
 }
 
+.rex-text-color-hover:hover{
+	cursor: pointer;
+	color: rgb(56, 89, 220);
+}
+
+.rex-text-underline-hover:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
 .rex-hover{
 	cursor: pointer;
 }

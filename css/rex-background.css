@@ -23,6 +23,10 @@
 	background-color: rgb(244, 245, 255);
 }
 
+.rex-background-dashboard-source-indicator{
+	background-color: rgba(239, 246, 255);
+}
+
 /*Default*/
 .rex-background-red{
 	background-color: red;

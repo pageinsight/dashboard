@@ -14,8 +14,36 @@
 	max-height: 400px;
 }
 
+.rex-max-height-450px{
+	max-height: 450px;
+}
+
 .rex-max-height-500px{
 	max-height: 500px;
+}
+
+.rex-min-height-100px{
+	min-height: 100px;
+}
+
+.rex-min-height-200px{
+	min-height: 200px;
+}
+
+.rex-min-height-300px{
+	min-height: 300px;
+}
+
+.rex-min-height-400px{
+	min-height: 400px;
+}
+
+.rex-min-height-450px{
+	min-height: 450px;
+}
+
+.rex-min-height-500px{
+	min-height: 500px;
 }
 
 .rex-height-10vh{

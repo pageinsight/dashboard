@@ -12,6 +12,7 @@
 @import 'rex-dom.css';
 @import 'rex-clickable-dropdown.css';
 @import 'rex-animation-pulse.css';
+@import 'rex-animation.css';
 
 body{
 	background-color: rgb(244, 245, 255);
@@ -192,6 +193,16 @@ body{
 	display: table-cell;
 }
 
+.custom-dashboard-source-selected{
+	font-weight: bold;
+	color: rgb(56, 89, 220);
+	border-bottom: 3px solid rgb(56, 89, 220);
+}
+
+#stickyNav{
+	z-index: 1;
+}
+
 @media (max-width: 1100px) {
 	.custom-responsive-container{
 		width: 90%;
@@ -253,9 +264,6 @@ body{
 	}
 	.custom-dashboard-grid-responsive div:nth-child(2){
 		margin-top: 32px;
-	}
-	.custom-dashboard-grid-responsive div div{
-		padding: 16px;
 	}
 	.custom-sticky-nav-content-grid{
 		display: block;
