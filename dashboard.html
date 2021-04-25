@@ -15,6 +15,7 @@
 	<script type="text/javascript" src="js/util.js"></script>
 	<script type="text/javascript" src="js/dashboard.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/chart.js@3.1.1/dist/chart.min.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<script async defer data-domain="pageinsighthq.app" src="https://plausible.io/js/plausible.js"></script>
 </head>
 <body>
@@ -321,110 +322,1094 @@
 			</div>
 			<div class="rex-space-32px"></div>
 			<div class="rex-display-grid2 custom-dashboard-grid-responsive">
-				<div class="rex-pr-8px">
-					<div class="rex-background-white rex-box-shadow1 rex-curDiv-8px rex-min-height-450px rex-max-height-450px">
-						<div class="rex-pad16px">
-							<div class="rex-display-grid2">
-								<div>
+				<div class="custom-dashboard-grid-left-responsive rex-pr-8px">
+					<div class="rex-background-white rex-box-shadow1 rex-curDiv-8px rex-min-height-450px rex-max-height-450px rex-position-relative rex-pad16px">
+						<table class="rex-width-100pp ">
+							<tr>
+								<td>
 									<h1 class="rex-fs-normal rex-color-blacktint">Top sources</h1>
+								</td>
+								<td class="rex-nowrap rex-text-align-right">
+									<span class="rex-fs-x-small rex-vertical-align">
+										<span class="rex-hover custom-dashboard-source-selected">All</span>
+										<span class="rex-text-color-hover rex-ml-8px rex-color-blacktint">Medium</span>
+										<span class="rex-text-color-hover rex-ml-8px rex-color-blacktint">Source</span>
+										<span class="rex-text-color-hover rex-ml-8px rex-color-blacktint">Campaign</span>
+									</span>
+								</td>
+							</tr>
+						</table>
+						<div class="rex-display-block">
+							<div class="rex-display-grid2 rex-mt-16px">
+								<div class="rex-color-gray rex-weight-bold rex-fs-x-small">
+									Source
 								</div>
-								<div>
-									<table class="rex-width-100pp">
+								<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+									Visitors
+								</div>
+							</div>
+							<div class="rex-space-8px"></div>
+							<div class="rex-overflow-auto custom-dashboard-item-max-height custom-scrollbar">
+								<div class="rex-position-relative rex-height-30px">
+									<div class="rex-position-absolute rex-width-100pp rex-height-100pp rex-background-dashboard-source-indicator rex-transition-width-250ms"></div>
+
+									<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
 										<tr>
-											<td class="rex-text-align-right">
-												<span class="rex-fs-x-small rex-vertical-align">
-													<span class="rex-hover custom-dashboard-source-selected">All</span>
-													<span class="rex-text-color-hover rex-ml-8px rex-color-blacktint">Medium</span>
-													<span class="rex-text-color-hover rex-ml-8px rex-color-blacktint">Source</span>
-													<span class="rex-text-color-hover rex-ml-8px rex-color-blacktint">Campaign</span>
-												</span>
+											<td class="rex-width-16px rex-pl-8px rex-pr-8px">
+												<img src="https://assets.pageinsight.app/icon-128px.png" class="rex-width-16px rex-height-16px rex-vertical-align">
+											</td>
+											<td>
+												<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Google</a>
+											</td>
+											<td class="rex-width-10px">
+												<span class="rex-vertical-align rex-fs-small rex-weight-bold">82</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="rex-space-8px"></div>
+								<div class="rex-position-relative rex-height-30px">
+									<div class="rex-position-absolute rex-width-50pp rex-height-100pp rex-background-dashboard-source-indicator rex-transition-width-250ms"></div>
+
+									<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+										<tr>
+											<td class="rex-width-16px rex-pl-8px rex-pr-8px">
+												<img src="https://assets.pageinsight.app/icon-128px.png" class="rex-width-16px rex-height-16px rex-vertical-align">
+											</td>
+											<td>
+												<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Page Insight</a>
+											</td>
+											<td class="rex-width-10px">
+												<span class="rex-vertical-align rex-fs-small rex-weight-bold">22</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="rex-space-8px"></div>
+								<div class="rex-position-relative rex-height-30px">
+									<div class="rex-position-absolute rex-width-50pp rex-height-100pp rex-background-dashboard-source-indicator rex-transition-width-250ms"></div>
+
+									<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+										<tr>
+											<td class="rex-width-16px rex-pl-8px rex-pr-8px">
+												<img src="https://assets.pageinsight.app/icon-128px.png" class="rex-width-16px rex-height-16px rex-vertical-align">
+											</td>
+											<td>
+												<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Page Insight</a>
+											</td>
+											<td class="rex-width-10px">
+												<span class="rex-vertical-align rex-fs-small rex-weight-bold">22</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="rex-space-8px"></div>
+								<div class="rex-position-relative rex-height-30px">
+									<div class="rex-position-absolute rex-width-50pp rex-height-100pp rex-background-dashboard-source-indicator rex-transition-width-250ms"></div>
+
+									<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+										<tr>
+											<td class="rex-width-16px rex-pl-8px rex-pr-8px">
+												<img src="https://assets.pageinsight.app/icon-128px.png" class="rex-width-16px rex-height-16px rex-vertical-align">
+											</td>
+											<td>
+												<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Page Insight</a>
+											</td>
+											<td class="rex-width-10px">
+												<span class="rex-vertical-align rex-fs-small rex-weight-bold">22</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="rex-space-8px"></div>
+								<div class="rex-position-relative rex-height-30px">
+									<div class="rex-position-absolute rex-width-50pp rex-height-100pp rex-background-dashboard-source-indicator rex-transition-width-250ms"></div>
+
+									<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+										<tr>
+											<td class="rex-width-16px rex-pl-8px rex-pr-8px">
+												<img src="https://assets.pageinsight.app/icon-128px.png" class="rex-width-16px rex-height-16px rex-vertical-align">
+											</td>
+											<td>
+												<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Page Insight</a>
+											</td>
+											<td class="rex-width-10px">
+												<span class="rex-vertical-align rex-fs-small rex-weight-bold">22</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="rex-space-8px"></div>
+								<div class="rex-position-relative rex-height-30px">
+									<div class="rex-position-absolute rex-width-50pp rex-height-100pp rex-background-dashboard-source-indicator rex-transition-width-250ms"></div>
+
+									<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+										<tr>
+											<td class="rex-width-16px rex-pl-8px rex-pr-8px">
+												<img src="https://assets.pageinsight.app/icon-128px.png" class="rex-width-16px rex-height-16px rex-vertical-align">
+											</td>
+											<td>
+												<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Page Insight</a>
+											</td>
+											<td class="rex-width-10px">
+												<span class="rex-vertical-align rex-fs-small rex-weight-bold">22</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="rex-space-8px"></div>
+								<div class="rex-position-relative rex-height-30px">
+									<div class="rex-position-absolute rex-width-50pp rex-height-100pp rex-background-dashboard-source-indicator rex-transition-width-250ms"></div>
+
+									<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+										<tr>
+											<td class="rex-width-16px rex-pl-8px rex-pr-8px">
+												<img src="https://assets.pageinsight.app/icon-128px.png" class="rex-width-16px rex-height-16px rex-vertical-align">
+											</td>
+											<td>
+												<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Page Insight</a>
+											</td>
+											<td class="rex-width-10px">
+												<span class="rex-vertical-align rex-fs-small rex-weight-bold">22</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="rex-space-8px"></div>
+								<div class="rex-position-relative rex-height-30px">
+									<div class="rex-position-absolute rex-width-50pp rex-height-100pp rex-background-dashboard-source-indicator rex-transition-width-250ms"></div>
+
+									<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+										<tr>
+											<td class="rex-width-16px rex-pl-8px rex-pr-8px">
+												<img src="https://assets.pageinsight.app/icon-128px.png" class="rex-width-16px rex-height-16px rex-vertical-align">
+											</td>
+											<td>
+												<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Page Insight</a>
+											</td>
+											<td class="rex-width-10px">
+												<span class="rex-vertical-align rex-fs-small rex-weight-bold">22</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="rex-space-8px"></div>
+								<div class="rex-position-relative rex-height-30px">
+									<div class="rex-position-absolute rex-width-50pp rex-height-100pp rex-background-dashboard-source-indicator rex-transition-width-250ms"></div>
+
+									<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+										<tr>
+											<td class="rex-width-16px rex-pl-8px rex-pr-8px">
+												<img src="https://assets.pageinsight.app/icon-128px.png" class="rex-width-16px rex-height-16px rex-vertical-align">
+											</td>
+											<td>
+												<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Page Insight</a>
+											</td>
+											<td class="rex-width-10px">
+												<span class="rex-vertical-align rex-fs-small rex-weight-bold">22</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="rex-space-8px"></div>
+								<div class="rex-position-relative rex-height-30px">
+									<div class="rex-position-absolute rex-width-50pp rex-height-100pp rex-background-dashboard-source-indicator rex-transition-width-250ms"></div>
+
+									<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+										<tr>
+											<td class="rex-width-16px rex-pl-8px rex-pr-8px">
+												<img src="https://assets.pageinsight.app/icon-128px.png" class="rex-width-16px rex-height-16px rex-vertical-align">
+											</td>
+											<td>
+												<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Page Insight</a>
+											</td>
+											<td class="rex-width-10px">
+												<span class="rex-vertical-align rex-fs-small rex-weight-bold">22</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="rex-space-8px"></div>
+								<div class="rex-position-relative rex-height-30px">
+									<div class="rex-position-absolute rex-width-50pp rex-height-100pp rex-background-dashboard-source-indicator rex-transition-width-250ms"></div>
+
+									<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+										<tr>
+											<td class="rex-width-16px rex-pl-8px rex-pr-8px">
+												<img src="https://assets.pageinsight.app/icon-128px.png" class="rex-width-16px rex-height-16px rex-vertical-align">
+											</td>
+											<td>
+												<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Page Insight</a>
+											</td>
+											<td class="rex-width-10px">
+												<span class="rex-vertical-align rex-fs-small rex-weight-bold">22</span>
 											</td>
 										</tr>
 									</table>
 								</div>
 							</div>
+						</div>
+						<div class="rex-display-gone">
 							<div class="rex-display-grid2 rex-mt-16px">
-								<div class="rex-color-lightgray rex-weight-bold rex-fs-x-small">
-									Source
+								<div class="rex-color-gray rex-weight-bold rex-fs-x-small">
+									UTM Medium
 								</div>
-								<div class="rex-color-lightgray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
 									Visitors
 								</div>
 							</div>
-							<div class="rex-mt-8px rex-position-relative rex-height-30px rex-hover">
-								<div class="rex-position-absolute rex-width-80pp rex-height-100pp rex-background-dashboard-source-indicator rex-transition-width-250ms"></div>
 
-								<div class="rex-center-absolute-div-vertical rex-width-100pp rex-display-grid2">
-									<div class="rex-height-100pp rex-fs-small rex-text-overflow-ellipses rex-pl-16px rex-pr-16px">
-										<img src="https://assets.pageinsight.app/icon-128px.png" class="rex-width-16px rex-height-16px rex-vertical-align rex-mr-8px">
-										<a href="#" class="rex-vertical-align rex-text-underline-hover">Page Insight</a>
-									</div>
-									<div class="rex-height-100pp rex-fs-small rex-text-overflow-ellipses">
-										<span class="rex-float-right rex-vertical-align">8</span>
-									</div>
-								</div>
+							<div class="rex-mt-8px rex-position-relative rex-height-30px">
+								<div class="rex-position-absolute rex-width-100pp rex-height-100pp rex-background-dashboard-source-indicator rex-transition-width-250ms"></div>
+
+								<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+									<tr>
+										<td class="rex-width-16px rex-pl-8px rex-pr-8px">
+											<img src="https://assets.pageinsight.app/icon-128px.png" class="rex-width-16px rex-height-16px rex-vertical-align">
+										</td>
+										<td>
+											<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Google</a>
+										</td>
+										<td class="rex-width-10px">
+											<span class="rex-vertical-align rex-fs-small rex-weight-bold">82</span>
+										</td>
+									</tr>
+								</table>
 							</div>
 
-							<div class="rex-mt-8px rex-position-relative rex-height-30px rex-hover">
+							<div class="rex-mt-8px rex-position-relative rex-height-30px">
 								<div class="rex-position-absolute rex-width-50pp rex-height-100pp rex-background-dashboard-source-indicator rex-transition-width-250ms"></div>
 
-								<div class="rex-center-absolute-div-vertical rex-width-100pp rex-display-grid2">
-									<div class="rex-height-100pp rex-fs-small rex-text-overflow-ellipses rex-pl-16px rex-pr-16px">
-										<img src="https://assets.pageinsight.app/icon-128px.png" class="rex-width-16px rex-height-16px rex-vertical-align rex-mr-8px">
-										<a href="#" class="rex-vertical-align rex-text-underline-hover">Google</a>
-									</div>
-									<div class="rex-height-100pp rex-fs-small rex-text-overflow-ellipses">
-										<span class="rex-float-right rex-vertical-align">5</span>
-									</div>
-								</div>
+								<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+									<tr>
+										<td class="rex-width-16px rex-pl-8px rex-pr-8px">
+											<img src="https://assets.pageinsight.app/icon-128px.png" class="rex-width-16px rex-height-16px rex-vertical-align">
+										</td>
+										<td>
+											<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Page Insight</a>
+										</td>
+										<td class="rex-width-10px">
+											<span class="rex-vertical-align rex-fs-small rex-weight-bold">22</span>
+										</td>
+									</tr>
+								</table>
 							</div>
-
-							<div class="rex-mt-8px rex-position-relative rex-height-30px rex-hover">
-								<div class="rex-position-absolute rex-width-30pp rex-height-100pp rex-background-dashboard-source-indicator rex-transition-width-250ms"></div>
-
-								<div class="rex-center-absolute-div-vertical rex-width-100pp rex-display-grid2">
-									<div class="rex-height-100pp rex-fs-small rex-text-overflow-ellipses rex-pl-16px rex-pr-16px">
-										<img src="https://assets.pageinsight.app/icon-128px.png" class="rex-width-16px rex-height-16px rex-vertical-align rex-mr-8px">
-										<a class="rex-vertical-align rex-text-underline-hover">t.co</a>
-									</div>
-									<div class="rex-height-100pp rex-fs-small rex-text-overflow-ellipses">
-										<span class="rex-float-right rex-vertical-align">3</span>
-									</div>
-								</div>
-							</div>
-
-							
 						</div>
-						<div class="rex-pad16px rex-display-gone"></div>
+						<div class="rex-display-gone">
+							<div class="rex-display-grid2 rex-mt-16px">
+								<div class="rex-color-gray rex-weight-bold rex-fs-x-small">
+									UTM Source
+								</div>
+								<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+									Visitors
+								</div>
+							</div>
+
+							<div class="rex-mt-8px rex-position-relative rex-height-30px">
+								<div class="rex-position-absolute rex-width-100pp rex-height-100pp rex-background-dashboard-source-indicator rex-transition-width-250ms"></div>
+
+								<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+									<tr>
+										<td class="rex-width-16px rex-pl-8px rex-pr-8px">
+											<img src="https://assets.pageinsight.app/icon-128px.png" class="rex-width-16px rex-height-16px rex-vertical-align">
+										</td>
+										<td>
+											<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Google</a>
+										</td>
+										<td class="rex-width-10px">
+											<span class="rex-vertical-align rex-fs-small rex-weight-bold">82</span>
+										</td>
+									</tr>
+								</table>
+							</div>
+
+							<div class="rex-mt-8px rex-position-relative rex-height-30px">
+								<div class="rex-position-absolute rex-width-50pp rex-height-100pp rex-background-dashboard-source-indicator rex-transition-width-250ms"></div>
+
+								<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+									<tr>
+										<td class="rex-width-16px rex-pl-8px rex-pr-8px">
+											<img src="https://assets.pageinsight.app/icon-128px.png" class="rex-width-16px rex-height-16px rex-vertical-align">
+										</td>
+										<td>
+											<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Page Insight</a>
+										</td>
+										<td class="rex-width-10px">
+											<span class="rex-vertical-align rex-fs-small rex-weight-bold">22</span>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="rex-display-gone">
+							<div class="rex-display-grid2 rex-mt-16px">
+								<div class="rex-color-gray rex-weight-bold rex-fs-x-small">
+									UTM Campaign
+								</div>
+								<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+									Visitors
+								</div>
+							</div>
+
+							<div class="rex-mt-8px rex-position-relative rex-height-30px">
+								<div class="rex-position-absolute rex-width-100pp rex-height-100pp rex-background-dashboard-source-indicator rex-transition-width-250ms"></div>
+
+								<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+									<tr>
+										<td class="rex-width-16px rex-pl-8px rex-pr-8px">
+											<img src="https://assets.pageinsight.app/icon-128px.png" class="rex-width-16px rex-height-16px rex-vertical-align">
+										</td>
+										<td>
+											<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Google</a>
+										</td>
+										<td class="rex-width-10px">
+											<span class="rex-vertical-align rex-fs-small rex-weight-bold">82</span>
+										</td>
+									</tr>
+								</table>
+							</div>
+
+							<div class="rex-mt-8px rex-position-relative rex-height-30px">
+								<div class="rex-position-absolute rex-width-50pp rex-height-100pp rex-background-dashboard-source-indicator rex-transition-width-250ms"></div>
+
+								<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+									<tr>
+										<td class="rex-width-16px rex-pl-8px rex-pr-8px">
+											<img src="https://assets.pageinsight.app/icon-128px.png" class="rex-width-16px rex-height-16px rex-vertical-align">
+										</td>
+										<td>
+											<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Page Insight</a>
+										</td>
+										<td class="rex-width-10px">
+											<span class="rex-vertical-align rex-fs-small rex-weight-bold">22</span>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+
+						<img src="images/gifs/ic_loading.gif" class="rex-width-100px rex-height-100px rex-center-absolute-div rex-display-gone">
 					</div>
 				</div>
-				<div class="rex-pl-8px">
-					<div class="rex-background-white rex-box-shadow1 rex-max-height-400px rex-curDiv-8px rex-pad16px">
-						Top pages
+				<div class="custom-dashboard-grid-right-responsive rex-pl-8px">
+					<div class="rex-background-white rex-box-shadow1 rex-curDiv-8px rex-min-height-450px rex-max-height-450px rex-position-relative rex-pad16px">
+						<table class="rex-width-100pp ">
+							<tr>
+								<td>
+									<h1 class="rex-fs-normal rex-color-blacktint">Top pages</h1>
+								</td>
+								<td class="rex-nowrap rex-text-align-right">
+									<span class="rex-fs-x-small rex-vertical-align">
+										<span class="rex-hover custom-dashboard-source-selected">Top pages</span>
+										<span class="rex-text-color-hover rex-ml-8px rex-color-blacktint">Entry pages</span>
+										<span class="rex-text-color-hover rex-ml-8px rex-color-blacktint">Exit pages</span>
+									</span>
+								</td>
+							</tr>
+						</table>
+						<div class="rex-display-block">
+							<div class="rex-display-grid2 rex-mt-16px">
+								<div class="rex-color-gray rex-weight-bold rex-fs-x-small">
+									Page url
+								</div>
+								<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+									Visitors
+								</div>
+							</div>
+							<div class="rex-space-8px"></div>
+							<div class="rex-overflow-auto custom-dashboard-item-max-height custom-scrollbar">
+								<div class="rex-position-relative rex-height-30px">
+									<div class="rex-position-absolute rex-width-100pp rex-height-100pp rex-background-dashboard-source-indicator2 rex-transition-width-250ms"></div>
+
+									<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+										<tr>
+											<td class="rex-pl-8px rex-pr-8px">
+												<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">/</a>
+											</td>
+											<td class="rex-width-10px">
+												<span class="rex-vertical-align rex-fs-small rex-weight-bold">82</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="rex-space-8px"></div>
+								<div class="rex-position-relative rex-height-30px">
+									<div class="rex-position-absolute rex-width-50pp rex-height-100pp rex-background-dashboard-source-indicator2 rex-transition-width-250ms"></div>
+
+									<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+										<tr>
+											<td class="rex-pl-8px rex-pr-8px">
+												<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">/support</a>
+											</td>
+											<td class="rex-width-10px">
+												<span class="rex-vertical-align rex-fs-small rex-weight-bold">22</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="rex-display-gone">
+							<div class="rex-display-grid2 rex-mt-16px">
+								<div class="rex-color-gray rex-weight-bold rex-fs-x-small">
+									Page url
+								</div>
+								<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+									Visitors
+								</div>
+							</div>
+							<div class="rex-space-8px"></div>
+							<div class="rex-overflow-auto custom-dashboard-item-max-height custom-scrollbar">
+								<div class="rex-position-relative rex-height-30px">
+									<div class="rex-position-absolute rex-width-100pp rex-height-100pp rex-background-dashboard-source-indicator2 rex-transition-width-250ms"></div>
+
+									<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+										<tr>
+											<td class="rex-pl-8px rex-pr-8px">
+												<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">/entrypages</a>
+											</td>
+											<td class="rex-width-10px">
+												<span class="rex-vertical-align rex-fs-small rex-weight-bold">82</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="rex-space-8px"></div>
+								<div class="rex-position-relative rex-height-30px">
+									<div class="rex-position-absolute rex-width-50pp rex-height-100pp rex-background-dashboard-source-indicator2 rex-transition-width-250ms"></div>
+
+									<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+										<tr>
+											<td class="rex-pl-8px rex-pr-8px">
+												<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">/supportEntry</a>
+											</td>
+											<td class="rex-width-10px">
+												<span class="rex-vertical-align rex-fs-small rex-weight-bold">22</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						
+						<img src="images/gifs/ic_loading.gif" class="rex-width-100px rex-height-100px rex-center-absolute-div rex-display-gone">
 					</div>
 				</div>
 			</div>
 			<div class="rex-space-32px"></div>
 			<div class="rex-display-grid2 custom-dashboard-grid-responsive">
-				<div class="rex-pr-8px">
-					<div class="rex-background-white rex-box-shadow1 rex-height-400px rex-curDiv-8px rex-pad16px">
-						Countries
+				<div class="custom-dashboard-grid-left-responsive rex-pr-8px">
+					<div class="rex-background-white rex-box-shadow1 rex-curDiv-8px rex-min-height-450px rex-max-height-450px rex-position-relative rex-pad16px">
+						<table class="rex-width-100pp ">
+							<tr>
+								<td>
+									<h1 class="rex-fs-normal rex-color-blacktint">Countries</h1>
+								</td>
+								<td class="rex-nowrap rex-text-align-right">
+									<span class="rex-fs-x-small rex-vertical-align">
+										<span class="rex-hover custom-dashboard-source-selected">Map</span>
+										<span class="rex-text-color-hover rex-ml-8px rex-color-blacktint">Locations</span>
+									</span>
+								</td>
+							</tr>
+						</table>
+						
+						<!-- Countries map -->
+						<div class="rex-display-block custom-dashboard-countries-container"></div>
+						<div class="rex-display-gone">
+							<div class="rex-display-grid2 rex-mt-16px">
+								<div class="rex-color-gray rex-weight-bold rex-fs-x-small">
+									Country
+								</div>
+								<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+									Visitors
+								</div>
+							</div>
+							<div class="rex-space-8px"></div>
+							<div class="rex-overflow-auto custom-dashboard-item-max-height custom-scrollbar">
+								<div class="rex-position-relative rex-height-30px">
+									<div class="rex-position-absolute rex-width-100pp rex-height-100pp rex-background-dashboard-source-indicator2 rex-transition-width-250ms"></div>
+
+									<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+										<tr>
+											<td class="custom-dashboard-device-width rex-pl-8px rex-pr-8px">
+												<img src="images/icons/ic_mobile.png" class="custom-dashboard-device-width custom-dashboard-device-height rex-vertical-align">
+											</td>
+											<td>
+												<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Nigeria</a>
+											</td>
+											<td class="rex-width-10px">
+												<span class="rex-vertical-align rex-fs-small rex-weight-bold">82</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="rex-space-8px"></div>
+								<div class="rex-position-relative rex-height-30px">
+									<div class="rex-position-absolute rex-width-50pp rex-height-100pp rex-background-dashboard-source-indicator2 rex-transition-width-250ms"></div>
+
+									<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+										<tr>
+											<td class="custom-dashboard-device-width rex-pl-8px rex-pr-8px">
+												<img src="images/icons/ic_laptop.png" class="custom-dashboard-device-width custom-dashboard-device-height rex-vertical-align">
+											</td>
+											<td>
+												<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Algeria</a>
+											</td>
+											<td class="rex-width-10px">
+												<span class="rex-vertical-align rex-fs-small rex-weight-bold">82</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+								
+								<div class="rex-space-8px"></div>
+								<div class="rex-position-relative rex-height-30px">
+									<div class="rex-position-absolute rex-width-50pp rex-height-100pp rex-background-dashboard-source-indicator2 rex-transition-width-250ms"></div>
+
+									<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+										<tr>
+											<td class="custom-dashboard-device-width rex-pl-8px rex-pr-8px">
+												<img src="images/icons/ic_desktop.png" class="custom-dashboard-device-width custom-dashboard-device-height rex-vertical-align">
+											</td>
+											<td>
+												<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Spain</a>
+											</td>
+											<td class="rex-width-10px">
+												<span class="rex-vertical-align rex-fs-small rex-weight-bold">82</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+								
+								<div class="rex-space-8px"></div>
+								<div class="rex-position-relative rex-height-30px">
+									<div class="rex-position-absolute rex-width-50pp rex-height-100pp rex-background-dashboard-source-indicator2 rex-transition-width-250ms"></div>
+
+									<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+										<tr>
+											<td class="custom-dashboard-device-width rex-pl-8px rex-pr-8px">
+												<img src="images/icons/ic_tablet.png" class="custom-dashboard-device-width custom-dashboard-device-height rex-vertical-align">
+											</td>
+											<td>
+												<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">United States of America</a>
+											</td>
+											<td class="rex-width-10px">
+												<span class="rex-vertical-align rex-fs-small rex-weight-bold">82</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						
+						<img src="images/gifs/ic_loading.gif" class="rex-width-100px rex-height-100px rex-center-absolute-div rex-display-gone">
 					</div>
 				</div>
-				<div class="rex-pl-8px">
-					<div class="rex-background-white rex-box-shadow1 rex-height-400px rex-curDiv-8px rex-pad16px">
-						Devices
+				<div class="custom-dashboard-grid-right-responsive rex-pl-8px">
+					<div class="rex-background-white rex-box-shadow1 rex-curDiv-8px rex-min-height-450px rex-max-height-450px rex-position-relative rex-pad16px">
+						<table class="rex-width-100pp ">
+							<tr>
+								<td>
+									<h1 class="rex-fs-normal rex-color-blacktint">Devices</h1>
+								</td>
+								<td class="rex-nowrap rex-text-align-right">
+									<span class="rex-fs-x-small rex-vertical-align">
+										<span class="rex-hover custom-dashboard-source-selected">Size</span>
+										<span class="rex-text-color-hover rex-ml-8px rex-color-blacktint">Browser</span>
+										<span class="rex-text-color-hover rex-ml-8px rex-color-blacktint">OS</span>
+									</span>
+								</td>
+							</tr>
+						</table>
+						<div class="rex-display-block">
+							<div class="rex-display-grid2 rex-mt-16px">
+								<div class="rex-color-gray rex-weight-bold rex-fs-x-small">
+									Screen size
+								</div>
+								<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+									Visitors
+								</div>
+							</div>
+							<div class="rex-space-8px"></div>
+							<div class="rex-overflow-auto custom-dashboard-item-max-height custom-scrollbar">
+								<div class="rex-position-relative rex-height-30px">
+									<div class="rex-position-absolute rex-width-100pp rex-height-100pp rex-background-dashboard-source-indicator rex-transition-width-250ms"></div>
+
+									<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+										<tr>
+											<td class="custom-dashboard-device-width rex-pl-8px rex-pr-8px">
+												<img src="images/icons/ic_mobile.png" class="custom-dashboard-device-width custom-dashboard-device-height rex-vertical-align">
+											</td>
+											<td>
+												<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Mobile</a>
+											</td>
+											<td class="rex-width-10px">
+												<span class="rex-vertical-align rex-fs-small rex-weight-bold">82</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="rex-space-8px"></div>
+								<div class="rex-position-relative rex-height-30px">
+									<div class="rex-position-absolute rex-width-50pp rex-height-100pp rex-background-dashboard-source-indicator rex-transition-width-250ms"></div>
+
+									<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+										<tr>
+											<td class="custom-dashboard-device-width rex-pl-8px rex-pr-8px">
+												<img src="images/icons/ic_laptop.png" class="custom-dashboard-device-width custom-dashboard-device-height rex-vertical-align">
+											</td>
+											<td>
+												<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Laptop</a>
+											</td>
+											<td class="rex-width-10px">
+												<span class="rex-vertical-align rex-fs-small rex-weight-bold">82</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+								
+								<div class="rex-space-8px"></div>
+								<div class="rex-position-relative rex-height-30px">
+									<div class="rex-position-absolute rex-width-50pp rex-height-100pp rex-background-dashboard-source-indicator rex-transition-width-250ms"></div>
+
+									<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+										<tr>
+											<td class="custom-dashboard-device-width rex-pl-8px rex-pr-8px">
+												<img src="images/icons/ic_desktop.png" class="custom-dashboard-device-width custom-dashboard-device-height rex-vertical-align">
+											</td>
+											<td>
+												<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Desktop</a>
+											</td>
+											<td class="rex-width-10px">
+												<span class="rex-vertical-align rex-fs-small rex-weight-bold">82</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+								
+								<div class="rex-space-8px"></div>
+								<div class="rex-position-relative rex-height-30px">
+									<div class="rex-position-absolute rex-width-50pp rex-height-100pp rex-background-dashboard-source-indicator rex-transition-width-250ms"></div>
+
+									<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+										<tr>
+											<td class="custom-dashboard-device-width rex-pl-8px rex-pr-8px">
+												<img src="images/icons/ic_tablet.png" class="custom-dashboard-device-width custom-dashboard-device-height rex-vertical-align">
+											</td>
+											<td>
+												<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Tablet</a>
+											</td>
+											<td class="rex-width-10px">
+												<span class="rex-vertical-align rex-fs-small rex-weight-bold">82</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="rex-display-gone">
+							<div class="rex-display-grid2 rex-mt-16px">
+								<div class="rex-color-gray rex-weight-bold rex-fs-x-small">
+									Browser
+								</div>
+								<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+									Visitors
+								</div>
+							</div>
+							<div class="rex-space-8px"></div>
+							<div class="rex-overflow-auto custom-dashboard-item-max-height custom-scrollbar">
+								<div class="rex-position-relative rex-height-30px">
+									<div class="rex-position-absolute rex-width-100pp rex-height-100pp rex-background-dashboard-source-indicator rex-transition-width-250ms"></div>
+
+									<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+										<tr>
+											<td class="rex-pl-8px rex-pr-8px">
+												<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Chrome</a>
+											</td>
+											<td class="rex-width-10px">
+												<span class="rex-vertical-align rex-fs-small rex-weight-bold">82</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="rex-space-8px"></div>
+								<div class="rex-position-relative rex-height-30px">
+									<div class="rex-position-absolute rex-width-50pp rex-height-100pp rex-background-dashboard-source-indicator rex-transition-width-250ms"></div>
+
+									<table  class="rex-position-absolute rex-width-100pp rex-height-100pp">
+										<tr>
+											<td class="rex-pl-8px rex-pr-8px">
+												<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Firefox</a>
+											</td>
+											<td class="rex-width-10px">
+												<span class="rex-vertical-align rex-fs-small rex-weight-bold">22</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="rex-display-gone">
+							<div class="rex-display-grid2 rex-mt-16px">
+								<div class="rex-color-gray rex-weight-bold rex-fs-x-small">
+									Operating system
+								</div>
+								<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+									Visitors
+								</div>
+							</div>
+							<div class="rex-space-8px"></div>
+							<div class="rex-overflow-auto custom-dashboard-item-max-height custom-scrollbar">
+								<div class="rex-position-relative rex-height-30px">
+									<div class="rex-position-absolute rex-width-70pp rex-height-100pp rex-background-dashboard-source-indicator rex-transition-width-250ms"></div>
+
+									<table class="rex-position-absolute rex-width-100pp rex-height-100pp">
+										<tr>
+											<td class="rex-pl-8px rex-pr-8px">
+												<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Android</a>
+											</td>
+											<td class="rex-width-10px">
+												<span class="rex-vertical-align rex-fs-small rex-weight-bold">82</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+								<div class="rex-space-8px"></div>
+								<div class="rex-position-relative rex-height-30px">
+									<div class="rex-position-absolute rex-width-50pp rex-height-100pp rex-background-dashboard-source-indicator rex-transition-width-250ms"></div>
+
+									<table class="rex-position-absolute rex-width-100pp rex-height-100pp">
+										<tr>
+											<td class="rex-pl-8px rex-pr-8px">
+												<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Windows</a>
+											</td>
+											<td class="rex-width-10px">
+												<span class="rex-vertical-align rex-fs-small rex-weight-bold">12</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						
+						
+						<img src="images/gifs/ic_loading.gif" class="rex-width-100px rex-height-100px rex-center-absolute-div rex-display-gone">
 					</div>
 				</div>
 			</div>
 			<div class="rex-space-32px"></div>
-			<div class="rex-background-white rex-box-shadow1 rex-height-100px rex-curDiv-8px rex-pad16px">
-				Goal conversion
+			<div class="rex-background-white rex-box-shadow1 rex-curDiv-8px rex-pad16px">
+				<h1 class="rex-fs-normal rex-color-blacktint">Goal conversion</h1>
+				<div class="custom-dashboard-goal-conversion-grid rex-mt-16px">
+					<div class="rex-color-gray rex-weight-bold rex-fs-x-small">
+						Goal
+					</div>
+					<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+						Uniques
+					</div>
+					<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+						Total
+					</div>
+					<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+						CR
+					</div>
+				</div>
+				<div class="rex-space-8px"></div>
+				<div class="rex-overflow-auto custom-dashboard-item-max-height custom-scrollbar">
+					<div class="rex-position-relative rex-height-30px">
+						<div class="rex-position-absolute rex-width-70pp rex-height-100pp rex-background-dashboard-source-indicator2 rex-transition-width-250ms"></div>
+						
+						<div class="custom-dashboard-goal-conversion-grid rex-center-absolute-div-vertical rex-width-100pp rex-pl-8px rex-pr-8px">
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small">
+								<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Visit /default</a>
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								43
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								133
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								34%
+							</div>
+						</div>
+					</div>
+					<div class="rex-space-8px"></div>
+					<div class="rex-position-relative rex-height-30px">
+						<div class="rex-position-absolute rex-width-80pp rex-height-100pp rex-background-dashboard-source-indicator2 rex-transition-width-250ms"></div>
+						
+						<div class="custom-dashboard-goal-conversion-grid rex-center-absolute-div-vertical rex-width-100pp rex-pl-8px rex-pr-8px">
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small">
+								<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Visit /support</a>
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								143
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								12k
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								54%
+							</div>
+						</div>
+					</div>
+					<div class="rex-space-8px"></div>
+					<div class="rex-position-relative rex-height-30px">
+						<div class="rex-position-absolute rex-width-30pp rex-height-100pp rex-background-dashboard-source-indicator2 rex-transition-width-250ms"></div>
+						
+						<div class="custom-dashboard-goal-conversion-grid rex-center-absolute-div-vertical rex-width-100pp rex-pl-8px rex-pr-8px">
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small">
+								<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Signup</a>
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								3
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								12k
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								54%
+							</div>
+						</div>
+					</div>
+					<div class="rex-space-8px"></div>
+					<div class="rex-position-relative rex-height-30px">
+						<div class="rex-position-absolute rex-width-70pp rex-height-100pp rex-background-dashboard-source-indicator2 rex-transition-width-250ms"></div>
+						
+						<div class="custom-dashboard-goal-conversion-grid rex-center-absolute-div-vertical rex-width-100pp rex-pl-8px rex-pr-8px">
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small">
+								<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Visit /default</a>
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								43
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								133
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								34%
+							</div>
+						</div>
+					</div>
+					<div class="rex-space-8px"></div>
+					<div class="rex-position-relative rex-height-30px">
+						<div class="rex-position-absolute rex-width-80pp rex-height-100pp rex-background-dashboard-source-indicator2 rex-transition-width-250ms"></div>
+						
+						<div class="custom-dashboard-goal-conversion-grid rex-center-absolute-div-vertical rex-width-100pp rex-pl-8px rex-pr-8px">
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small">
+								<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Visit /support</a>
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								143
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								12k
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								54%
+							</div>
+						</div>
+					</div>
+					<div class="rex-space-8px"></div>
+					<div class="rex-position-relative rex-height-30px">
+						<div class="rex-position-absolute rex-width-30pp rex-height-100pp rex-background-dashboard-source-indicator2 rex-transition-width-250ms"></div>
+						
+						<div class="custom-dashboard-goal-conversion-grid rex-center-absolute-div-vertical rex-width-100pp rex-pl-8px rex-pr-8px">
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small">
+								<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Signup</a>
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								3
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								12k
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								54%
+							</div>
+						</div>
+					</div>
+					<div class="rex-space-8px"></div>
+					<div class="rex-position-relative rex-height-30px">
+						<div class="rex-position-absolute rex-width-70pp rex-height-100pp rex-background-dashboard-source-indicator2 rex-transition-width-250ms"></div>
+						
+						<div class="custom-dashboard-goal-conversion-grid rex-center-absolute-div-vertical rex-width-100pp rex-pl-8px rex-pr-8px">
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small">
+								<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Visit /default</a>
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								43
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								133
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								34%
+							</div>
+						</div>
+					</div>
+					<div class="rex-space-8px"></div>
+					<div class="rex-position-relative rex-height-30px">
+						<div class="rex-position-absolute rex-width-80pp rex-height-100pp rex-background-dashboard-source-indicator2 rex-transition-width-250ms"></div>
+						
+						<div class="custom-dashboard-goal-conversion-grid rex-center-absolute-div-vertical rex-width-100pp rex-pl-8px rex-pr-8px">
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small">
+								<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Visit /support</a>
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								143
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								12k
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								54%
+							</div>
+						</div>
+					</div>
+					<div class="rex-space-8px"></div>
+					<div class="rex-position-relative rex-height-30px">
+						<div class="rex-position-absolute rex-width-30pp rex-height-100pp rex-background-dashboard-source-indicator2 rex-transition-width-250ms"></div>
+						
+						<div class="custom-dashboard-goal-conversion-grid rex-center-absolute-div-vertical rex-width-100pp rex-pl-8px rex-pr-8px">
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small">
+								<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Signup</a>
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								3
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								12k
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								54%
+							</div>
+						</div>
+					</div>
+					<div class="rex-space-8px"></div>
+					<div class="rex-position-relative rex-height-30px">
+						<div class="rex-position-absolute rex-width-70pp rex-height-100pp rex-background-dashboard-source-indicator2 rex-transition-width-250ms"></div>
+						
+						<div class="custom-dashboard-goal-conversion-grid rex-center-absolute-div-vertical rex-width-100pp rex-pl-8px rex-pr-8px">
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small">
+								<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Visit /default</a>
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								43
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								133
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								34%
+							</div>
+						</div>
+					</div>
+					<div class="rex-space-8px"></div>
+					<div class="rex-position-relative rex-height-30px">
+						<div class="rex-position-absolute rex-width-80pp rex-height-100pp rex-background-dashboard-source-indicator2 rex-transition-width-250ms"></div>
+						
+						<div class="custom-dashboard-goal-conversion-grid rex-center-absolute-div-vertical rex-width-100pp rex-pl-8px rex-pr-8px">
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small">
+								<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Visit /support</a>
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								143
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								12k
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								54%
+							</div>
+						</div>
+					</div>
+					<div class="rex-space-8px"></div>
+					<div class="rex-position-relative rex-height-30px">
+						<div class="rex-position-absolute rex-width-30pp rex-height-100pp rex-background-dashboard-source-indicator2 rex-transition-width-250ms"></div>
+						
+						<div class="custom-dashboard-goal-conversion-grid rex-center-absolute-div-vertical rex-width-100pp rex-pl-8px rex-pr-8px">
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small">
+								<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Signup</a>
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								3
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								12k
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								54%
+							</div>
+						</div>
+					</div>
+					<div class="rex-space-8px"></div>
+					<div class="rex-position-relative rex-height-30px">
+						<div class="rex-position-absolute rex-width-70pp rex-height-100pp rex-background-dashboard-source-indicator2 rex-transition-width-250ms"></div>
+						
+						<div class="custom-dashboard-goal-conversion-grid rex-center-absolute-div-vertical rex-width-100pp rex-pl-8px rex-pr-8px">
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small">
+								<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Visit /default</a>
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								43
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								133
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								34%
+							</div>
+						</div>
+					</div>
+					<div class="rex-space-8px"></div>
+					<div class="rex-position-relative rex-height-30px">
+						<div class="rex-position-absolute rex-width-80pp rex-height-100pp rex-background-dashboard-source-indicator2 rex-transition-width-250ms"></div>
+						
+						<div class="custom-dashboard-goal-conversion-grid rex-center-absolute-div-vertical rex-width-100pp rex-pl-8px rex-pr-8px">
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small">
+								<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Visit /support</a>
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								143
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								12k
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								54%
+							</div>
+						</div>
+					</div>
+					<div class="rex-space-8px"></div>
+					<div class="rex-position-relative rex-height-30px">
+						<div class="rex-position-absolute rex-width-30pp rex-height-100pp rex-background-dashboard-source-indicator2 rex-transition-width-250ms"></div>
+						
+						<div class="custom-dashboard-goal-conversion-grid rex-center-absolute-div-vertical rex-width-100pp rex-pl-8px rex-pr-8px">
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small">
+								<a href="#" class="rex-vertical-align rex-fs-small rex-text-underline-hover rex-color-black">Signup</a>
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								3
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								12k
+							</div>
+							<div class="rex-color-gray rex-weight-bold rex-fs-x-small rex-text-align-right">
+								54%
+							</div>
+						</div>
+					</div>
+					<div class="rex-space-8px"></div>
+					
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="rex-space-64px"></div>
-	<div class="rex-space-64px"></div>
-</body>
-</html>
+		<div class="rex-space-64px"></div>
+		<div class="rex-space-64px"></div>
+	</body>
+	</html>

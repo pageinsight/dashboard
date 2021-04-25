@@ -203,6 +203,49 @@ body{
 	z-index: 1;
 }
 
+.custom-dashboard-item-max-height{
+	max-height: 350px;
+}
+
+/* width */
+.custom-scrollbar::-webkit-scrollbar {
+	width: 5px;
+}
+
+/* Track */
+.custom-scrollbar::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+/* Handle */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+	background: rgb(230, 230, 230);
+	border-radius: 8px;
+}
+
+/* Handle on hover */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+	background: rgb(160, 160, 160);
+}
+
+.custom-dashboard-device-width{
+	width: 18px;
+}
+
+.custom-dashboard-device-height{
+	height: 18px;
+}
+
+.custom-dashboard-countries-container{
+	height: 390px;
+}
+
+.custom-dashboard-goal-conversion-grid{
+	display: grid;
+	grid-template-columns: auto 80px 80px 80px;
+	grid-template-rows: auto;
+}
+
 @media (max-width: 1100px) {
 	.custom-responsive-container{
 		width: 90%;
@@ -239,6 +282,19 @@ body{
 	}
 }
 
+@media (max-width: 1000px){
+	.custom-dashboard-grid-responsive{
+		display: block;
+	}
+	.custom-dashboard-grid-left-responsive{
+		padding: unset;
+	}
+	.custom-dashboard-grid-right-responsive{
+		padding: unset;
+		margin-top: 32px;
+	}
+}
+
 @media (max-width: 850px) {
 	.custom-signup-container-grid{
 		display: block;
@@ -255,15 +311,6 @@ body{
 		right: 16px;
 		left: unset;
 		bottom: 16px;		
-	}
-	.custom-dashboard-grid-responsive{
-		display: block;
-	}
-	.custom-dashboard-grid-responsive div{
-		padding: 0px;
-	}
-	.custom-dashboard-grid-responsive div:nth-child(2){
-		margin-top: 32px;
 	}
 	.custom-sticky-nav-content-grid{
 		display: block;
@@ -355,6 +402,9 @@ body{
 	}
 	.custom-reports-container{
 		width: 100%;
+	}
+	.custom-dashboard-goal-conversion-grid{
+		grid-template-columns: auto 60px 60px 60px;
 	}
 }
 

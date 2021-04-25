@@ -118,55 +118,6 @@ window.onload = () => {
 
 	createChart();
 
-	let resizeValue = -1;
-	function updateWindowSize(){
-		var w = document.documentElement.clientWidth;
-		var h = document.documentElement.clientHeight;
-
-		//console.log(`width : ${w} height : ${h}`);
-
-		if(w < 384){
-			if(resizeValue != 4){
-				resizeValue = 4;
-				myChart.destroy();
-				ctx.canvas.height = 230;
-				createChart();
-			}
-		}else if(w < 500){
-			if(resizeValue != 3){
-				resizeValue = 3;
-				myChart.destroy();
-				ctx.canvas.height = 200;
-				createChart();
-			}			
-		}else if(w < 775){
-			if(resizeValue != 2){
-				resizeValue = 2;
-				myChart.destroy();
-				ctx.canvas.height = 170;
-				createChart();
-			}
-		}else if(w < 950){
-			if(resizeValue != 1){
-				resizeValue = 1;
-				myChart.destroy();
-				ctx.canvas.height = 140;
-				createChart();
-			}
-		}else if(w < 1000){
-			if(resizeValue != 0){
-				resizeValue = 0;
-				myChart.destroy();
-				ctx.canvas.height = 110;
-				createChart();
-			}
-		}
-	}
-
-	window.addEventListener("resize", updateWindowSize);
-
-	updateWindowSize();
-
 	let myPicker = document.getElementById("myPicker");
 	dateRangePicker = new AnalyticsDateRangePicker(myPicker, {
 		startDate: new Date("01/08/2021"),
@@ -239,4 +190,109 @@ window.onload = () => {
 		console.log(response.startDate);
 		console.log(response.endDate);
 	};
+
+	let countriesContainer = document.getElementsByClassName("custom-dashboard-countries-container")[0];
+	google.charts.load('current', {
+		'packages':['geochart'],
+        // Note: you will need to get a mapsApiKey for your project.
+        // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+        'mapsApiKey': 'AIzaSyDXby8gajXjYyDwX2TTib0XsnX95c9JtDQ',
+        'safeMode': true,
+        'enableRegionInteractivity': true,
+        'region': 'world',
+    });
+
+	google.charts.setOnLoadCallback(drawRegionsMap);
+
+	let chart;
+	let data;
+	let options;
+	let isChartLoaded = false;
+
+	function drawRegionsMap() {
+		isChartLoaded = true;
+		data = google.visualization.arrayToDataTable([
+			['Country', 'Visitors'],
+			['Germany', 200],
+			['United States', 300],
+			['Brazil', 400],
+			['Canada', 500],
+			['Nigeria', 1000],
+			['France', 600],
+			['RU', 700]
+			]);
+
+		options = {
+			chartArea: {width:'100%',height:'100%'},
+			colorAxis: {colors: ['#3730A3']},
+			legend: 'none'
+		};
+
+		chart = new google.visualization.GeoChart(countriesContainer);
+
+		google.visualization.events.addListener(chart, 'select', function () {
+			let selection = chart.getSelection();
+			if (selection.length > 0) {
+				let clickedCountryName = data.getValue(selection[0].row, 0);
+				console.log(clickedCountryName);
+			}
+		});
+
+		chart.draw(data, options);
+	}
+
+	function redrawRegionsMap(){
+		if(!isChartLoaded) return;
+		chart.draw(data, options);
+	}
+
+	let resizeValue = -1;
+	function updateWindowSize(){
+		var w = document.documentElement.clientWidth;
+		var h = document.documentElement.clientHeight;
+
+		redrawRegionsMap();
+
+		if(w < 384){
+			if(resizeValue != 4){
+				resizeValue = 4;
+				myChart.destroy();
+				ctx.canvas.height = 230;
+				createChart();
+			}
+		}else if(w < 500){
+			if(resizeValue != 3){
+				resizeValue = 3;
+				myChart.destroy();
+				ctx.canvas.height = 200;
+				createChart();
+			}			
+		}else if(w < 775){
+			if(resizeValue != 2){
+				resizeValue = 2;
+				myChart.destroy();
+				ctx.canvas.height = 170;
+				createChart();
+			}
+		}else if(w < 950){
+			if(resizeValue != 1){
+				resizeValue = 1;
+				myChart.destroy();
+				ctx.canvas.height = 140;
+				createChart();
+			}
+		}else if(w < 1000){
+			if(resizeValue != 0){
+				resizeValue = 0;
+				myChart.destroy();
+				ctx.canvas.height = 110;
+				createChart();
+			}
+		}
+	}
+
+	window.addEventListener("resize", updateWindowSize);
+
+	updateWindowSize();
+
 };
